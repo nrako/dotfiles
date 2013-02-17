@@ -1,0 +1,6 @@
+*.pyc
+.DS_Store
+Desktop.ini
+Thumbs.db
+
+.vim/.netrwhist

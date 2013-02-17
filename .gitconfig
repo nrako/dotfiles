@@ -1,0 +1,13 @@
+[hub]
+  protocol = https
+[user]
+	name = Nicolas Rakoto
+	email = nico@nrako.com
+[core]
+	excludesfile = ~/.gitignore_global
+  editor = vim
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
