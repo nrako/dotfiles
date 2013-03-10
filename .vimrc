@@ -23,6 +23,7 @@ Bundle 'Lokaltog/vim-powerline'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'The-NERD-tree'
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
 " ...

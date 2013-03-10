@@ -17,6 +17,7 @@ Sick of handling all this mess, need a proper solution to provision everything, 
 ## TODO
 
 - [ ] Consider the brand new [Boxen](http://boxen.github.com/) to provision all this mess?
+- [ ] Consider an update of zsh with `brew install zsh` new version 5 available
 - [ ] Find a proper solution to handle $PATH
 - [ ] Reconsider `update-aliases` alias command as it may represent a security issue, adopt an intermediate file to be reviewed after each update `aliases.zsh.review`?
 - [ ] Handle OSX settings

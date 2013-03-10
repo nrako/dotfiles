@@ -2,10 +2,13 @@
 #
 # Provision everything, Puppet? Boxen? Custom?
 
+# Set shell to zsh
+chsh -s /bin/zsh
+
 # Oh-My-ZSH!
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 rm -rf ~/.oh-my-zsh/custom
-ln -s ~/.dotfiles/oh-my-zsh-custom ~/.oh-my-zsh/custom
+ln -s ~/.dotfiles/oh-my-zsh/custom ~/.oh-my-zsh/custom
 
 rm -rf ~/.vim
 ln -s ~/.dotfiles/.vim ~/.vim

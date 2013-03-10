@@ -12,6 +12,13 @@ ZSH_THEME="nrako"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias george="foreman start -f Procfile_dev"
 
+# Aliasing/completion for hub https://github.com/defunkt/hub
+# TODO need to solve auto-completion
+# eval "$(hub alias -s)"
+
+# Completion for grunt for now only available for bash :(
+# eval "$grunt --completion=bash"
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -33,12 +40,12 @@ alias george="foreman start -f Procfile_dev"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git battery brew heroku node npm osx last-working-dir sublime themes vagrant vundle rvm gem bower)
+plugins=(git github battery brew heroku node npm osx last-working-dir sublime themes vagrant vundle rvm gem bower coffee)
 
 source $ZSH/oh-my-zsh.sh
 
 # Set default PATH
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:${HOME}/.bin
 # Heroku Toolbelt - not sure if needed - use brew?
 #export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
