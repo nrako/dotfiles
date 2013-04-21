@@ -2,9 +2,13 @@
 
 Sick of handling all this mess, need a proper solution to provision everything, this is a Work In Progress for my Mac, Sweet Mac.
 
+## Introduction
+
+[dotfiles.github.com](http://dotfiles.github.com/).
+
 ## Tools
 
-* ZSH + [Oh-My-ZSH](https://github.com/robbyrussell/oh-my-zsh)
+* ZSH + [Oh-My-ZSH](https://github.com/robbyrussell/oh-my-zsh) + [Antigen](https://github.com/zsh-users/antigen) (TODO)
 * VIM + [Vundle](https://github.com/gmarik/vundle)
 * [Alias.sh](http://alias.sh/) alias `update-aliases` in oh-my-zsh-custom/aliases.zsh
 
@@ -16,6 +20,7 @@ Sick of handling all this mess, need a proper solution to provision everything, 
 
 ## TODO
 
+- [ ] Make use of [Antigen](https://github.com/zsh-users/antigen)
 - [ ] Consider the brand new [Boxen](http://boxen.github.com/) to provision all this mess?
 - [ ] Consider an update of zsh with `brew install zsh` new version 5 available
 - [ ] Find a proper solution to handle $PATH
@@ -28,6 +33,8 @@ Sick of handling all this mess, need a proper solution to provision everything, 
 - [ ] Provision SublimeText2 with package manager themes plugins configs etc. Search inspiration in Holman dotfiles
 - [ ] Provision Heroku Toolbelt (brew?)
 - [ ] Provision EC2 API Tools (brew?)
+- [ ] best github alias   https://github.com/pengwynn/dotfiles/commit/82c1be26f65193c7799775dc0cf14e13694ce701
+- [ ] https://github.com/rupa/z
 
 
 ## Some source of Inspiration
