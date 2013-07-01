@@ -13,3 +13,5 @@
   ui = true
 [github]
 	user = nrako
+[credential]
+	helper = osxkeychain

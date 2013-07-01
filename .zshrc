@@ -1,3 +1,6 @@
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -40,7 +43,7 @@ alias george="foreman start -f Procfile_dev"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github battery brew heroku node npm osx last-working-dir sublime themes vagrant vundle rvm gem bower coffee)
+plugins=(git github battery brew heroku node npm osx last-working-dir sublime themes vagrant vundle rvm gem bower coffee bower redis-cli virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -60,5 +63,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:${HOME}
 # http://alias.sh/
 export ALIAS_SH_USER_ID=1950
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM Ruby
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" # This loads NVM Node
+
+export WORKON_HOME=$HOME/.virtualenvs
