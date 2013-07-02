@@ -19,7 +19,7 @@ ln -s ~/.dotfiles/.vim ~/.vim
 mkdir ~/.virtualenvs
 for f in .virtualenvs/*
 do
-  ln -s $f ~/.virtualenvs/$(basename $f)
+  ln -fs $(cd $(dirname $f); pwd)/$(basename $f) /Users/nrako/.virtualenvs/$(basename $f)
 done
 
 # TODO
