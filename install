@@ -15,4 +15,11 @@ ln -s ~/.dotfiles/.vim ~/.vim
 # Install configured Bundles
 # vim +BundleInstall +qall
 
+# Virtualenvwrapper hooks
+mkdir ~/.virtualenvs
+for f in .virtualenvs/*
+do
+  ln -s $f ~/.virtualenvs/$(basename $f)
+done
+
 # TODO

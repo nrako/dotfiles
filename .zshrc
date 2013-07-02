@@ -67,3 +67,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" # This loads NVM Node
 
 export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/sandbox
+export PIP_RESPECT_VIRTUALENV=true
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+
