@@ -43,7 +43,7 @@ alias george="foreman start -f Procfile_dev"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github battery brew heroku node npm osx last-working-dir sublime themes vagrant vundle rvm gem bower coffee bower redis-cli virtualenvwrapper)
+plugins=(git github battery brew heroku node npm osx last-working-dir sublime themes vagrant vundle rvm gem bower coffee bower redis-cli django)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -68,6 +68,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/sandbox
-export PIP_RESPECT_VIRTUALENV=true
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-
+#export PIP_RESPECT_VIRTUALENV=true
+#export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_DOWNLOAD_CACHE=/tmp
+export JAVA_HOME=$(/usr/libexec/java_home)
