@@ -1,7 +1,7 @@
 [hub]
   protocol = https
 [user]
-	name = Nicolas Rakoto
+	name = Nicholas Rakoto
 	email = nico@nrako.com
 [core]
 	excludesfile = ~/.gitignore_global

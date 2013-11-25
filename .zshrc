@@ -49,26 +49,21 @@ source $ZSH/oh-my-zsh.sh
 
 # Set default PATH
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:${HOME}/.bin
-# Heroku Toolbelt - not sure if needed - use brew?
-#export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-# EC2 API Tools - use brew?
-#export EC2_HOME=~/.ec2
-#export PATH=$PATH:$EC2_HOME/bin
-#export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
-#export EC2_SSH_PRIVATE_KEY=`ls $EC2_HOME/ec2-keypair.pem`
-#export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
-#export EC2_URL=https://ec2.us-west-1.amazonaws.com
 
 # http://alias.sh/
 export ALIAS_SH_USER_ID=1950
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-[[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" # This loads NVM Node
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#[[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh" # This loads NVM Node
 
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/sandbox
+export PROJECT_HOME=$HOME/src
 #export PIP_RESPECT_VIRTUALENV=true
 #export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_DOWNLOAD_CACHE=/tmp
-export JAVA_HOME=$(/usr/libexec/java_home)
+#export JAVA_HOME=$(/usr/libexec/java_home)
+
+
+[[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
+
+[[ -d /opt/boxen/homebrew/share/python ]] && path=($path /opt/boxen/homebrew/share/python)

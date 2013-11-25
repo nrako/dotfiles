@@ -1,4 +1,0 @@
-#!/bin/zsh
-# This hook is run after every virtualenv is activated.
-
-# http://virtualenvwrapper.readthedocs.org/en/latest/tips.html#zsh-prompt
