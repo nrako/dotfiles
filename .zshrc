@@ -62,7 +62,7 @@ export DOCKER_HOST=tcp://localhost:4243
 
 export NODEWEBKIT_BIN=/Applications/node-webkit.app/Contents/MacOS/node-webkit
 
-# Must need fix slow git completion!
+# Must have! fix slow git completion!
 __git_files () {
     _wanted files expl 'local files' _files
 }
