@@ -4,3 +4,5 @@ Desktop.ini
 Thumbs.db
 
 .vim/.netrwhist
+.sensible
+.zcompdump*
