@@ -29,7 +29,27 @@ ZSH_THEME="nrako" # symlink to npm pur-prompt
 
 # Look in ~/.oh-my-zsh/plugins/* and $ZSH_CUSTOM/plugins/*
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github battery brew heroku node npm osx last-working-dir sublime themes vagrant vundle rvm gem bower coffee bower redis-cli django fasd)
+plugins=(
+  git
+  grunt
+  # github #very slow
+  brew
+  heroku
+  node
+  #npm #kinda slow
+  fastnpm
+  osx
+  last-working-dir
+  sublime
+  themes
+  rvm gem
+  redis-cli
+  django
+  fasd
+  per-directory-history
+  docker
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
