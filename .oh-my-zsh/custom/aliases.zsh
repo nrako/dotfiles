@@ -1,4 +1,15 @@
+alias json="python -mjson.tool"
+
 alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
+
+# HTTP serve the current directory to 0.0.0.0 and safety port 8765
+# Detect python version
+ret=`python -c 'import sys; print("%i" % (sys.hexversion<0x03000000))'`
+if [ $ret -eq 0 ]; then    # Python version is >= 3
+    alias pyhttp='python -m http.server 8765'
+else    # Python version is < 3
+    alias pyhttp='python -m SimpleHTTPServer 8765'
+fi
 
 t() { 
 tail -f $1 | perl -pe "s/$2/\e[1;31;43m$&\e[0m/g"
@@ -54,4 +65,4 @@ alias george="foreman start -f Procfile_dev"
 alias activate='source .venv/bin/activate'
 alias mr='python manage.py runserver'
 alias flac='ruby ~/.bin/convertmp3/convertmp3.rb -b 320 -d ./'
-alias update-aliases="wget -q -O - \"$@\" https://alias.sh/user/$ALIAS_SH_USER_ID/alias$ALIAS_SH_PRIVATE > $ZSH_CUSTOM/aliases.zsh.cold ; eval 'git diff -- $ZSH_CUSTOM/aliases.zsh.cold' ; echo 'Loogs good? Then run:  \"cp $ZSH_CUSTOM/aliases.zsh.cold $ZSH_CUSTOM/aliases.zsh\"'"
+alias update-aliases="wget -q -O - \"$@\" https://alias.sh/user/\$ALIAS_SH_USER_ID/alias\$ALIAS_SH_PRIVATE > $ZSH_CUSTOM/aliases.zsh.cold ; eval 'git diff -- $ZSH_CUSTOM/aliases.zsh.cold' ; echo 'Loogs good? Then run:  \"cp $ZSH_CUSTOM/aliases.zsh.cold $ZSH_CUSTOM/aliases.zsh\"'"
