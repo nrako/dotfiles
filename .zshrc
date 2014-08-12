@@ -69,3 +69,6 @@ __git_files () {
 
 # Export sensible data
 source $HOME/src/dotfiles/.sensible
+
+# To avoid EMFile Error
+ulimit -n 512
