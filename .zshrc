@@ -49,6 +49,7 @@ plugins=(
   per-directory-history
   docker
   zsh-syntax-highlighting
+  parallels
 )
 
 source $ZSH/oh-my-zsh.sh
