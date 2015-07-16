@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_CUSTOM=$HOME/src/dotfiles/.oh-my-zsh/custom
 
 # Look in ~/.oh-my-zsh/themes/ or $ZSH_CUSTOM/themes/
-ZSH_THEME="nrako" # symlink to npm pur-prompt
+ZSH_THEME="pure" # symlink to npm pur-prompt
 
 # Aliasing/completion for hub https://github.com/defunkt/hub
 # TODO need to solve auto-completion
@@ -50,6 +50,8 @@ plugins=(
   docker
   zsh-syntax-highlighting
   parallels
+  mix
+  mix-fast
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -59,7 +61,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
 export PIP_DOWNLOAD_CACHE=/tmp
 
-export DOCKER_HOST=tcp://localhost:4243
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/nrako/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 
 export NODEWEBKIT_BIN=/Applications/node-webkit.app/Contents/MacOS/node-webkit
 
@@ -72,4 +76,4 @@ __git_files () {
 source $HOME/src/dotfiles/.sensible
 
 # To avoid EMFile Error
-ulimit -n 512
+ulimit -n 1024
