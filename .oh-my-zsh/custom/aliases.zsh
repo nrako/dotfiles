@@ -1,6 +1,12 @@
-alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+alias gl="git log --graph --full-history --pretty=format:'%Cred%h%Creset -%Cgreen%d%Creset %s %Cblue(%cr)%Creset <%ae>' --abbrev-commit --date=relative"
 
-alias update-aliases="wget -q -O - \"$@\" https://alias.sh/user/\$ALIAS_SH_USER_ID/alias\$ALIAS_SH_PRIVATE > $ZSH_CUSTOM/aliases.zsh.cold ; eval '(cd $ZSH_CUSTOM; git diff -- $ZSH_CUSTOM/aliases.zsh.cold)' ; echo 'Loogs good? Then run:  \"cp $ZSH_CUSTOM/aliases.zsh.cold $ZSH_CUSTOM/aliases.zsh && source $ZSH_CUSTOM/aliases.zsh\" (Or run safealiases)' && safealiases () {cp $ZSH_CUSTOM/aliases.zsh.cold $ZSH_CUSTOM/aliases.zsh && source $ZSH_CUSTOM/aliases.zsh && echo aliases updated! } "
+alias gla="git log --graph --full-history --all --pretty=format:'%Cred%h%Creset -%Cgreen%d%Creset %s %Cblue(%cr)%Creset <%ae>' --abbrev-commit --date=relative --branches"
+
+alias dki="docker run -t -i -P"
+
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
 alias json="python -mjson.tool"
 
@@ -15,7 +21,7 @@ else    # Python version is < 3
     alias pyhttp='python -m SimpleHTTPServer 8765'
 fi
 
-t() { 
+t() {
 tail -f $1 | perl -pe "s/$2/\e[1;31;43m$&\e[0m/g"
 }
 
@@ -61,11 +67,10 @@ alias ......='cd ../../../../../'
 
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
 
-alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-
 alias al="alias | grep"
 
 alias george="foreman start -f Procfile_dev"
 alias activate='source .venv/bin/activate'
 alias mr='python manage.py runserver'
 alias flac='ruby ~/.bin/convertmp3/convertmp3.rb -b 320 -d ./'
+alias drmi='docker rmi $(docker images --filter dangling=true --quiet)'
