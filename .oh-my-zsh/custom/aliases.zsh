@@ -87,4 +87,5 @@ function b2d {
 }
 function dme {
   eval "$(docker-machine env $1)"
+  sudo sed -i '' -E "s/^ *[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+( +$1.machine)/$(docker-machine ip $1)\1/" /etc/hosts
 }
