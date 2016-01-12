@@ -25,14 +25,6 @@ ln -s ~/src/dotfile/.zshenv ~/.zshenv
 # copy custom keyboard layout
 cp ~/src/dotfiles/keyboards/Swiss FR Dev.keylayout ~/Library/Keyboard Layouts/
 
-# install rbenv
-brew update
-brew upgrade rbenv ruby-build
-
-# install latest stable ruby
-rbenv install 2.1.4
-rbenv global 2.1.4
-
 # install foreman
 gem install foreman
 
