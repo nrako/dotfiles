@@ -21,6 +21,7 @@ git submodule update
 rm ~/.zshrc
 ln -s ~/src/dotfile/.zshrc ~/.zshrc
 ln -s ~/src/dotfile/.zshenv ~/.zshenv
+ln -s ~/src/dotfiles/.gemrc ~/.gemrc
 
 # copy custom keyboard layout
 cp ~/src/dotfiles/keyboards/Swiss FR Dev.keylayout ~/Library/Keyboard Layouts/
