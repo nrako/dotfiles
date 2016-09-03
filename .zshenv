@@ -2,7 +2,9 @@
 export ZDOTDIR=$HOME/src/dotfiles
 
 # Set default PATH
-export PATH=$PATH:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:${HOME}/.bin
+export PATH=$PATH:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:${HOME}/.bin:/Users/nrako/bin
+
+export PATH=${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:$PATH
 
 export PATH=/usr/local/bin:$PATH
 
