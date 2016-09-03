@@ -48,10 +48,14 @@ plugins=(
   fasd
   per-directory-history
   docker
+  docker-compose
   zsh-syntax-highlighting
   parallels
   mix
   mix-fast
+  chruby
+  ssh-agent
+  gpg-agent
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -67,6 +71,10 @@ export DOCKER_TLS_VERIFY=1
 
 export NODEWEBKIT_BIN=/Applications/node-webkit.app/Contents/MacOS/node-webkit
 
+export PGDATA=/usr/local/var/postgres
+
+export ANDROID_HOME=~/Library/Android/sdk
+
 # Must have! fix slow git completion!
 __git_files () {
     _wanted files expl 'local files' _files
@@ -77,3 +85,14 @@ source $HOME/src/dotfiles/.sensible
 
 # To avoid EMFile Error
 ulimit -n 1024
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+function f_notifyme {
+  LAST_EXIT_CODE=$?
+  CMD=$(fc -ln -1)
+  # No point in waiting for the command to complete
+  notifyme "$CMD" "$LAST_EXIT_CODE" &
+}
+
+export PS1='$(f_notifyme)'$PS1
