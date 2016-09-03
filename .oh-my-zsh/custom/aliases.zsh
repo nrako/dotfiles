@@ -2,6 +2,7 @@
 alias gl="git log --graph --full-history --pretty=format:'%Cred%h%Creset -%Cgreen%d%Creset %s %Cblue(%cr)%Creset <%ae>' --abbrev-commit --date=relative"
 alias gla="git log --graph --full-history --all --pretty=format:'%Cred%h%Creset -%Cgreen%d%Creset %s %Cblue(%cr)%Creset <%ae>' --abbrev-commit --date=relative --branches"
 alias lg='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
+alias gcaa='git commit -a --amend -C HEAD'
 
 
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
@@ -77,6 +78,10 @@ alias george="foreman start -f Procfile_dev"
 alias flac='ruby ~/.bin/convertmp3/convertmp3.rb -b 320 -d ./'
 
 # Docker
+alias dk='docker'
+alias di='docker images'
+alias dp='docker ps'
+alias dpa='docker ps -a'
 alias drmi='docker rmi $(docker images --filter dangling=true --quiet)'
 alias dki="docker run -t -i -P"
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
