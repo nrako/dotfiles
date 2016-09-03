@@ -54,3 +54,16 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Set the timezone; see `systemsetup -listtimezones` for other values
 systemsetup -settimezone "Europe/Zurich" > /dev/null
+
+# Set global keyboards shortcuts
+defaults write -g NSUserKeyEquivalents '{
+  Back = "@~h";
+  Forward = "@~l";
+  "Go Back" = "@~h";
+  "Go Forward" = "@~l";
+  "Open Location..." = "@$l";
+  "Select Next Tab" = "@l";
+  "Select Previous Tab" = "@h";
+  "Show Next Tab" = "@l";
+  "Show Previous Tab" = "@h";
+}'
