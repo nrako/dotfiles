@@ -1,42 +1,27 @@
-# install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#!/usr/bin/env bash
+# Mostly grabbed from:
+#   https://github.com/nicknisi/dotfiles/commit/9e841588b6944b50543a112b303278b6eb386c7f
 
-# install git
-brew doctor
-brew update
-brew install git
+echo "Installing dotfiles"
 
-# install oh-my-zsh
-curl -L http://install.ohmyz.sh | sh
+echo "initializing submodule(s)"
+git submodule update --init --recursive
 
-# clone dotfiles
-mkdir ~/src
-cd ~/src
-git clone git@github.com:nrako/dotfiles.git
-cd dotfiles
-# clone submodules within dotfiles
-git submodule init
-git submodule update
+source install/link.sh
 
-rm ~/.zshrc
-ln -s ~/src/dotfile/.zshrc ~/.zshrc
-ln -s ~/src/dotfile/.zshenv ~/.zshenv
-ln -s ~/src/dotfiles/.gemrc ~/.gemrc
+if [ "$(uname)" == "Darwin" ]; then
+    echo -e "\n\nRunning on OSX"
+    source install/brew.sh
+    source install/macos.sh
+fi
 
-# copy custom keyboard layout
+echo "creating vim directories"
+mkdir -p ~/.vim-tmp
+
+echo "install custom keyboard layout"
 cp ~/src/dotfiles/keyboards/Swiss FR Dev.keylayout ~/Library/Keyboard Layouts/
 
-# install foreman
-gem install foreman
+echo "Configuring zsh as default shell"
+chsh -s $(which zsh)
 
-
-# install xquartz via website https://xquartz.macosforge.org
-
-brew install fasd
-brew install wine
-# got take a coffee
-brew install nginx
-brew install ant
-brew install wget
-
-# install Java SDK http://www.oracle.com/technetwork/java/javase/downloads/index.html =|(
+echo "Done."
