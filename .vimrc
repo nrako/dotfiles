@@ -1,9 +1,12 @@
+" Use vim settings, rather then vi settings (much better!)
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+filetype off                   " required!
+set encoding=utf-8
+
 syntax on
 colorscheme mustang
 set number
-
-set nocompatible               " be iMproved
-filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -38,3 +41,5 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
+
+set noswapfile                  " do not write annoying intermediate swap files.
