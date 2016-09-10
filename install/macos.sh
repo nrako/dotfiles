@@ -5,8 +5,8 @@
 # Or, in other words, set shit how I like in OS X.
 #
 # The original idea and most settings were grabbed from:
-#   https://github.com/holman/dotfiles/blob/master/osx/set-defaults.sh
-#   https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+#   https://github.com/holman/dotfiles/blob/master/macos/set-defaults.sh
+#   https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 #
 #
 echo -e "\n\nSetting OS X settings"
@@ -75,7 +75,7 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 # Set the timezone; see `systemsetup -listtimezones` for other values
 systemsetup -settimezone "Europe/Zurich" > /dev/null
 
-# Set global keyboards shortcuts
+# Set global keyboards shortcuts for vim style navigation
 defaults write -g NSUserKeyEquivalents '{
   Back = "@~h";
   Forward = "@~l";

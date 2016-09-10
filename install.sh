@@ -30,10 +30,7 @@ cp ~/src/dotfiles/keyboards/Swiss FR Dev.keylayout ~/Library/Keyboard Layouts/
 gem install foreman
 
 
-
 # install xquartz via website https://xquartz.macosforge.org
-
-
 
 brew install fasd
 brew install wine
