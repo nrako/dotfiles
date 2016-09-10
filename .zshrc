@@ -54,8 +54,6 @@ plugins=(
   mix
   mix-fast
   chruby
-  ssh-agent
-  gpg-agent
 )
 
 source $ZSH/oh-my-zsh.sh
