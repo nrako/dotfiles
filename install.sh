@@ -11,8 +11,8 @@ source install/link.sh
 
 if [ "$(uname)" == "Darwin" ]; then
     echo -e "\n\nRunning on OSX"
-    source install/brew.sh
-    source install/macos.sh
+    source brew/install.sh
+    source macos/install.sh
 fi
 
 echo "creating vim directories"
