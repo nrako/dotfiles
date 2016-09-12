@@ -13,6 +13,7 @@ brew install openssl
 brew install ack
 brew install wget
 brew install curl
+brew install neovim/neovim/neovim
 
 # git
 brew install git

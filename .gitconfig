@@ -5,7 +5,7 @@
 	email = nico@nrako.com
 [core]
 	excludesfile = ~/.gitignore_global
-  editor = vim
+  editor = nvim
 [color]
   diff = auto
   status = auto
