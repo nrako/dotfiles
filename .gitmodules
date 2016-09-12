@@ -7,3 +7,6 @@
 [submodule ".oh-my-zsh/custom/plugins/parallels"]
 	path = .oh-my-zsh/custom/plugins/parallels
 	url = git@github.com:benclark/parallels-zsh-plugin.git
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
