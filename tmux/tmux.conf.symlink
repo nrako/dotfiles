@@ -55,25 +55,27 @@ set-window-option -g mode-keys vi
 bind -t vi-copy 'v' begin-selection
 bind -t vi-copy 'y' copy-selection
 
-######################
-### DESIGN CHANGES ###
-######################
-
-source ~/src/dotfiles/tmux/theme.sh
-
-
 ###################
 ### TPM PLUGINS ###
 ###################
 set -g @tpm_plugins "          \
   tmux-plugins/tpm             \
-  tmux-plugins/tmux-sensible  \
+  tmux-plugins/tmux-sensible   \
+  tmux-plugins/tmux-resurrect  \
+  tmux-plugins/tmux-sessionist \
+  tmux-plugins/tmux-prefix-highlight \
   tmux-plugins/tmux-open       \
   tmux-plugins/tmux-copycat    \
   tmux-plugins/tmux-yank       \
   tmux-plugins/tmux-continuum  \
   nhdaly/tmux-scroll-copy-mode \
 "
+
+######################
+### DESIGN CHANGES ###
+######################
+
+source ~/.dotfiles/tmux/theme.sh
 
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
