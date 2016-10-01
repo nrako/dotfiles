@@ -18,8 +18,3 @@ paths=(
 for i in $paths; do
   export PATH="$i:$PATH"
 done
-
-# /usr/bin
-# /bin
-# /usr/sbin
-# /sbin

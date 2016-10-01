@@ -8,6 +8,8 @@ syntax on
 colorscheme mustang
 set number
 
+set wildmenu
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
