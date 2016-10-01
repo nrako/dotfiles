@@ -1,8 +1,7 @@
-*.pyc
 .DS_Store
-Desktop.ini
 Thumbs.db
 
-.vim/.netrwhist
 .sensible
-.zcompdump*
+
+config/nvim/plugged
+config/nvim/.netrwhist
