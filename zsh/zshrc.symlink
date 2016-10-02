@@ -70,3 +70,5 @@ function f_notifyme {
 export PS1='$(f_notifyme)'$PS1
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source $HOME/.dotfiles/zsh/functions.zsh
