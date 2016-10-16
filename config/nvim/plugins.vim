@@ -32,6 +32,7 @@ Plug 'mxw/vim-jsx', { 'for': ['jsx', 'javascript'] } " JSX support
 Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax
 Plug 'othree/html5.vim', { 'for': 'html' } " html5 support
 Plug 'digitaltoad/vim-jade', { 'for': ['jade', 'pug'] } " jade support
+Plug 'slim-template/vim-slim', { 'for': 'slim' } " slim support
 
 " Ruby
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
