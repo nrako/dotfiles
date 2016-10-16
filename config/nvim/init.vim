@@ -15,10 +15,14 @@ set hidden                  " hide buffers instead of closing them this
                             "    to background without being written; and
                             "    that marks and undo history are preserved
 
+" ya all speak English right! 
+set spell
+set spelllang=en_us
+
 " undos
 set undolevels=1000         " use many muchos levels of undo
 if v:version >= 730
-  set undofile              " persists undo between vim sessions
+  set undofile              " persists undo between Vim sessions
   set undodir=~/.config/nvim/undodir
 endif
 
