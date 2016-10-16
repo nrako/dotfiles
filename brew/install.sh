@@ -10,6 +10,7 @@ echo "=============================="
 
 # must
 brew install openssl
+brew install ag
 brew install ack
 brew install wget
 brew install curl
