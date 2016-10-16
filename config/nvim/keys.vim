@@ -16,14 +16,18 @@ imap <c-x><c-j> <plug>(fzf-complete-file-ag)
 imap <c-x><c-l> <plug>(fzf-complete-line)
 
 if isdirectory(".git")
-	" if in a git project, use :GFiles
-	nmap <silent> <C-p> :GFiles<cr>
-	nmap <Leader>p :GFiles<cr>
-	nmap <Leader>c :Commits<cr>
+  " if in a git project, use :GFiles
+  nmap <silent> <C-p> :GFiles<CR>
+  nmap <Leader>p :GFiles<CR>
+  nmap <Leader>gc :Commits<CR>
+  nmap <leader>gb :Gblame<CR>
+  nmap <leader>gs :Gstatus<CR>
+  nmap <leader>gd :Gdiff<CR>
+  nmap <leader>gw :Gwrite<CR>
 else
-	" otherwise, use :FZF
-	nnoremap <silent> <C-p> :FZF<CR>
-	nnoremap <Leader>p :FZF<cr>
+  " otherwise, use :FZF
+  nnoremap <silent> <C-p> :FZF<CR>
+  nnoremap <Leader>p :FZF<CR>
 endif
 
 " FZF 
