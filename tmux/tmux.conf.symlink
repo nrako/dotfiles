@@ -37,6 +37,9 @@ bind C-p select-window -t :-
 # enable vim keybindings in copy  mode
 set-window-option -g mode-keys vi
 
+# enable xterm-keys (i.e for <S-Left> vim maps)
+set-window-option -g xterm-keys on
+
 # Setup 'v' to begin selection as in Vim
 bind -t vi-copy 'v' begin-selection
 bind -t vi-copy 'y' copy-selection
