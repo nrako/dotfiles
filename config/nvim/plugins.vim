@@ -25,8 +25,7 @@ Plug 'neomake/neomake' " make and linting framework for neovim!
 " JavaScript
 Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' } " JavaScript indent support
 Plug 'moll/vim-node', { 'for': 'javascript' } " node support
-Plug 'othree/yajs.vim', { 'for': 'javascript' } " JavaScript syntax plugin
-Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' } " ES6 and beyond syntax
+Plug 'pangloss/vim-javascript', { 'for': ['jsx', 'javascript'] } " Javascript syntax plugin
 Plug 'mxw/vim-jsx', { 'for': ['jsx', 'javascript'] } " JSX support
 
 " html / templates

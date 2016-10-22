@@ -67,3 +67,6 @@ augroup vimrcautogroup
   " run Neomake on save
 	autocmd! BufWritePost * Neomake
 augroup END
+
+" mxw/vim-jsx
+let g:jsx_ext_required = 0 " enable JSX in .js file

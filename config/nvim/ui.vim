@@ -7,7 +7,7 @@ endif
 set cursorline              " highlight current line
 set showmatch               " set show matching parenthesis
 
-" vim-operator-flashy config
+" haya14busa/vim-operator-flashy config
 hi YankHI term=bold ctermbg=141 ctermfg=0 guibg=#fcf8b3
 let g:operator#flashy#flash_time = 200
 let g:operator#flashy#group = 'YankHI'
