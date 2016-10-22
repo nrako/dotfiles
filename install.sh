@@ -7,6 +7,7 @@ echo "Installing dotfiles"
 echo "initializing submodule(s)"
 git submodule update --init --recursive
 
+echo "links all *.symlink files"
 source install/link.sh
 
 if [ "$(uname)" == "Darwin" ]; then
@@ -15,17 +16,14 @@ if [ "$(uname)" == "Darwin" ]; then
     source macos/install.sh
 fi
 
-echo "creating vim directories"
-mkdir -p ~/.vim-tmp
-
 echo "install terminfo for italic"
 tic ./resources/tmux-256color-italic.terminfo
 tic ./resources/xterm-256color-italic.terminfo
 
 echo "install custom keyboard layout"
-cp ~/src/dotfiles/keyboards/Swiss FR Dev.keylayout ~/Library/Keyboard Layouts/
+cp ~/src/dotfiles/keyboards/swiss-dev.keylayout ~/Library/Keyboard\ Layouts/
 
-echo "Configuring zsh as default shell"
+echo "configuring zsh as default shell"
 chsh -s $(which zsh)
 
 echo "Done."

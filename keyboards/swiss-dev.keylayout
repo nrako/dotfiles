@@ -1,8 +1,8 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.1.10 on 2012-04-20 at 03:49 (CEST)-->
-<!--Last edited by Ukelele version 3.0.5.81 on 2016-08-11 at 00:07 (GMT+2)-->
-<keyboard group="126" id="-9781" name="Swiss FR Dev2" maxout="16">
+<!--Last edited by Ukelele version 3.0.5.81 on 2016-10-22 at 16:12 (GMT+2)-->
+<keyboard group="126" id="-9781" name="nrako" maxout="16">
 	<layouts>
 		<layout first="0" last="0" mapSet="138" modifiers="30"/>
 	</layouts>
@@ -74,7 +74,7 @@
 			<key code="21" output="4"/>
 			<key code="22" output="6"/>
 			<key code="23" output="5"/>
-			<key code="24" output="^"/>
+			<key code="24" action="^"/>
 			<key code="25" output="9"/>
 			<key code="26" output="7"/>
 			<key code="27" output="&#x0027;"/>
@@ -91,7 +91,7 @@
 			<key code="38" output="j"/>
 			<key code="39" output="]"/>
 			<key code="40" output="k"/>
-			<key code="41" output="["/>
+			<key code="41" output="é"/>
 			<key code="42" output="$"/>
 			<key code="43" output=","/>
 			<key code="44" output="-"/>
@@ -427,7 +427,7 @@
 			<key code="38" output="º"/>
 			<key code="39" output="à"/>
 			<key code="40" output="∆"/>
-			<key code="41" output="é"/>
+			<key code="41" output="["/>
 			<key code="42" output="&#x0026;"/>
 			<key code="43" output="‘"/>
 			<key code="44" output="–"/>
@@ -1166,6 +1166,9 @@
 			<when state="State 3" output="ò"/>
 			<when state="State 4" output="ó"/>
 			<when state="State 5" output="õ"/>
+		</action>
+		<action id="^">
+			<when state="none" next="State 1"/>
 		</action>
 	</actions>
 	<terminators>
