@@ -18,6 +18,10 @@ fi
 echo "creating vim directories"
 mkdir -p ~/.vim-tmp
 
+echo "install terminfo for italic"
+tic ./resources/tmux-256color-italic.terminfo
+tic ./resources/xterm-256color-italic.terminfo
+
 echo "install custom keyboard layout"
 cp ~/src/dotfiles/keyboards/Swiss FR Dev.keylayout ~/Library/Keyboard Layouts/
 

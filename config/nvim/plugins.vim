@@ -1,8 +1,9 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " colorschemes
-Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'chriskempson/base16-vim'
 
+" must
 Plug 'tpope/vim-sensible'
 
 " utilities
