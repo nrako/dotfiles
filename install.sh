@@ -17,8 +17,8 @@ if [ "$(uname)" == "Darwin" ]; then
 fi
 
 echo "install terminfo for italic"
-tic ./resources/tmux-256color-italic.terminfo
-tic ./resources/xterm-256color-italic.terminfo
+tic ./resources/tmux-256color-italic.ti
+tic ./resources/xterm-256color-italic.ti
 
 echo "install custom keyboard layout"
 cp ~/src/dotfiles/keyboards/swiss-dev.keylayout ~/Library/Keyboard\ Layouts/
