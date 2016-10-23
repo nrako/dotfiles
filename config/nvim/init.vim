@@ -15,7 +15,7 @@ set hidden                  " hide buffers instead of closing them this
                             "    to background without being written; and
                             "    that marks and undo history are preserved
 
-" ya all speak English right! 
+" ya all speak English right!
 set spell
 set spelllang=en_us
 
@@ -47,25 +47,25 @@ set scrolloff=2             " keep x lines off the edges of the screen when scro
 set sidescrolloff=5         " keep x columns off the edges of the screen when scrolling horizontall
 
 augroup vimrcautogroup
-	autocmd!
-  
-  " Save whenever switching windows or leaving vim. 
+  autocmd!
+
+  " Save whenever switching windows or leaving vim.
   au FocusLost,WinLeave * :silent! wa
 
   " Trigger autoread when changing buffers or coming back to vim.
   au FocusGained,BufEnter * :silent! !
 
-	" automatically resize panes on resize
-	autocmd VimResized * exe 'normal! \<c-w>='
-  
-  " source vim config files on save
-	autocmd BufWritePost init.vim,plugins.vim,ui.vim,keys.vim source %
+  " automatically resize panes on resize
+  autocmd VimResized * exe 'normal! \<c-w>='
 
-	" save all files on focus lost, ignoring warnings about untitled buffers
-	autocmd FocusLost * silent! wa
+  " source vim config files on save
+  autocmd BufWritePost init.vim,plugins.vim,ui.vim,keys.vim source %
+
+  " save all files on focus lost, ignoring warnings about untitled buffers
+  autocmd FocusLost * silent! wa
 
   " run Neomake on save
-	autocmd! BufWritePost * Neomake
+  autocmd! BufWritePost * Neomake
 augroup END
 
 " mxw/vim-jsx
