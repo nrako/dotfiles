@@ -2,9 +2,10 @@ source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/ui.vim
 source ~/.config/nvim/keys.vim
 
-set nocompatible            " not compatible with vi
-set autoread                " detect when a file is changed
-
+if !has('nvim')
+  set nocompatible          " not compatible with vi
+  set mouse=a               " enavle using the mouse for vim
+endif
 
 set noswapfile              " do not write annoying intermediate swap files.
 
