@@ -8,6 +8,8 @@ map <up> <ESC>:cope<CR>
 map <left> <ESC>:NERDTreeToggle<CR>
 map <S-left> <ESC>:NERDTreeFind<CR>
 map <S-right> <ESC>:UndotreeToggle<CR>
+map <Tab> :NERDTreeToggle<CR>
+map <S-Tab> :NERDTreeFind<CR>
 
 " Insert mode completion via fzf
 imap <c-x><c-k> <plug>(fzf-complete-word)
@@ -54,3 +56,12 @@ nnoremap <silent> $ g$
 " Make yank all flash thanks to vim-operator-flashy
 map y <Plug>(operator-flashy)
 nmap Y <Plug>(operator-flashy)$
+
+" open alternate file in split
+nnoremap <leader>av :vsp\|A<CR>
+nnoremap <leader>as :sp\|A<CR>
+
+" go to insert with an empty line above and below
+nmap <leader>o o<CR><CR><Up>
+" go to insert with an empty line above and below
+nmap <leader>O O<CR><CR><Up>
