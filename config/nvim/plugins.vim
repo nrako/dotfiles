@@ -22,6 +22,7 @@ Plug 'mileszs/ack.vim' " search inside files using ack. Same as command line ack
 Plug 'kana/vim-operator-user' " required for the plugin bellow (vim-operator-flashy)
 Plug 'haya14busa/vim-operator-flashy' " flash yanked text
 Plug 'neomake/neomake' " make and linting framework for neovim!
+Plug 'christoomey/vim-tmux-navigator' " ctr-hjkl navigation between vim and tmux splits
 
 " JavaScript
 Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' } " JavaScript indent support

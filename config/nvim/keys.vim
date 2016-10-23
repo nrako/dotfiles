@@ -39,6 +39,12 @@ nmap <silent> <leader>h :History<CR>
 " FZF through buffers
 nmap <silent> <leader>b :Buffers<CR>
 
+" makes vim-tmux-navigator works in insert mode
+imap <C-h> <ESC><C-h>
+imap <C-j> <ESC><C-j>
+imap <C-k> <ESC><C-k>
+imap <C-l> <ESC><C-l>
+
 " moving up and down work as you would expect (useful for wrapped lines).
 nnoremap <silent> j gj
 nnoremap <silent> k gk
