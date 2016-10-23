@@ -41,6 +41,30 @@ nmap <silent> <leader>h :History<CR>
 " FZF through buffers
 nmap <silent> <leader>b :Buffers<CR>
 
+" vertical navigation with Alt
+map <A-j> <C-d>
+map <A-k> <C-u>
+
+" CMD navigation for tabs and scroll with iTerm2 hex codes key remapping
+" next tab iTerm2 send Hex codes 0x17 0x0C
+map <C-w><C-l> <ESC>:tabn<CR>
+imap <C-w><C-l> <ESC>:tabn<CR>
+" previous tab iTerm2 send Hex codes 0x17 0x08
+map <C-w><C-h> <ESC>:tabp<CR>
+imap <C-w><C-h> <ESC>:tabp<CR>
+" new tab iTerm2 send Hex codes 0x17 0x14
+map <C-w><C-t> <ESC>:tabnew<CR>
+imap <C-w><C-t> <ESC>:tabnew<CR>
+" close tab iTerm2 send Hex codes 0x17 0x17
+map <C-w><C-w> <ESC>:tabclose<CR>
+imap <C-w><C-w> <ESC>:tabclose<CR>
+" paragraph down iTerm2 send Hex codes 0x17 0x0A
+map <C-w><C-j> <S-}>
+imap <C-w><C-j> <ESC><S-}>
+" paragraph up iTerm2 send Hex codes 0x17 0x0B
+map <C-w><C-k> <S-{>
+imap <C-w><C-k> <ESC><S-{>
+
 " makes vim-tmux-navigator works in insert mode
 imap <C-h> <ESC><C-h>
 imap <C-j> <ESC><C-j>
