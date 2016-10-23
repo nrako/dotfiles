@@ -30,7 +30,7 @@ else
   nnoremap <Leader>p :FZF<CR>
 endif
 
-" FZF 
+" FZF
 nmap <silent> <leader>t :FZF<CR>
 
 " FZF through history
