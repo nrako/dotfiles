@@ -41,4 +41,7 @@ Plug 'tpope/vim-rake', { 'for': 'ruby' }
 " markdown
 Plug 'tpope/vim-markdown', { 'for': 'markdown' } " markdown support
 
+" tmux
+Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
+
 call plug#end()
