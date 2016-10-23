@@ -5,7 +5,6 @@ source ~/.config/nvim/keys.vim
 set nocompatible            " not compatible with vi
 set autoread                " detect when a file is changed
 
-set history=1000            " change history to 1000
 
 set noswapfile              " do not write annoying intermediate swap files.
 
@@ -42,7 +41,6 @@ endif
 
 " Tab control
 set expandtab               " use spaces no tab!
-set smarttab                " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
 set tabstop=2               " the visible width of tabs
 set softtabstop=2           " edit as if the tabs are 2 characters wide
 set shiftwidth=2            " number of spaces to use for indent and unindent
