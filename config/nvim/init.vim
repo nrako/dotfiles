@@ -19,6 +19,11 @@ set hidden                  " hide buffers instead of closing them this
 set spell
 set spelllang=en_us
 
+" suppress all bells
+set novisualbell
+set noerrorbells
+set vb
+
 " undos
 set undolevels=1000         " use many muchos levels of undo
 if v:version >= 730
