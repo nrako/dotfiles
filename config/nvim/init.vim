@@ -24,6 +24,10 @@ set novisualbell
 set noerrorbells
 set vb
 
+" splits
+set splitright                  " open vertical splits to the right
+set splitbelow                  " open splits to the bottom
+
 " undos
 set undolevels=1000         " use many muchos levels of undo
 if v:version >= 730
