@@ -15,6 +15,7 @@ Plug 'vim-airline/vim-airline' " fancy statusline
 Plug 'vim-airline/vim-airline-themes' " themes for vim-airline
 Plug 'airblade/vim-gitgutter' " some git gutter
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " distraction-free writing
+Plug 'junegunn/limelight.vim', { 'on': 'Limelight' } " focus tool. Good for presentating with vim
 Plug 'mbbill/undotree' " visualize vim undo tree
 Plug 'tpope/vim-surround' " parentheses, brackets, quotes, XML tags, and more   (i.e cs'<h1>)
 Plug 'mileszs/ack.vim' " search inside files using ack. Same as command line ack utility, but use :Ack
