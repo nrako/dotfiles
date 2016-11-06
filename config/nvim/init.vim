@@ -78,3 +78,6 @@ augroup END
 
 " mxw/vim-jsx
 let g:jsx_ext_required = 0 " enable JSX in .js file
+
+" milkypostman/vim-togglelist
+let g:toggle_list_no_mappings = 1

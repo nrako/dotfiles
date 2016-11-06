@@ -3,11 +3,13 @@ let mapleader="\<SPACE>"
 nnoremap <SPACE> <Nop>
 
 " Make Arrow Keys Useful Again
-map <down> <ESC>:ccl<CR>
-map <up> <ESC>:cope<CR>
+map <down> <ESC>:call ToggleLocationList()<CR>
+map <up> <ESC>:call ToggleQuickfixList()<CR>
 map <left> <ESC>:NERDTreeToggle<CR>
 map <S-left> <ESC>:NERDTreeFind<CR>
 map <S-right> <ESC>:UndotreeToggle<CR>
+
+" Use TAB to toggle NERDTree
 map <Tab> :NERDTreeToggle<CR>
 map <S-Tab> :NERDTreeFind<CR>
 
