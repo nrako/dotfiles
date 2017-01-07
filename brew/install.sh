@@ -36,6 +36,7 @@ brew install zsh-autosuggestions
 # vim
 brew install reattach-to-user-namespace
 brew install neovim/neovim/neovim
+brew install ctags
 
 # dev
 brew install python

@@ -1,6 +1,7 @@
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/ui.vim
 source ~/.config/nvim/keys.vim
+source ~/.config/nvim/ctags.vim
 
 if !has('nvim')
   set nocompatible          " not compatible with vi
