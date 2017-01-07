@@ -39,9 +39,10 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
 # Set a really fast key repeat.
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write -g KeyRepeat -int 1
+
 # Set a shorter Delay until key repeat
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write -g InitialKeyRepeat -int 15
 
 # Show the ~/Library folder.
 chflags nohidden ~/Library
