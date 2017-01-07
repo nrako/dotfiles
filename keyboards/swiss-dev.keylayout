@@ -1,8 +1,9 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 2.1.10 on 2012-04-20 at 03:49 (CEST)-->
-<!--Last edited by Ukelele version 3.0.5.81 on 2016-10-22 at 16:12 (GMT+2)-->
-<keyboard group="126" id="-9781" name="nrako" maxout="16">
+<!--custom keyboard layout-->
+<!--Last edited by Ukelele version 3.0.5.81 on 2017-01-07 at 15:32 (GMT+1)-->
+<keyboard group="126" id="-7281" name="swiss dev" maxout="16">
 	<layouts>
 		<layout first="0" last="0" mapSet="138" modifiers="30"/>
 	</layouts>
@@ -89,7 +90,7 @@
 			<key code="36" output="&#x000D;"/>
 			<key code="37" output="l"/>
 			<key code="38" output="j"/>
-			<key code="39" output="]"/>
+			<key code="39" output="à"/>
 			<key code="40" output="k"/>
 			<key code="41" output="é"/>
 			<key code="42" output="$"/>
@@ -419,13 +420,13 @@
 			<key code="30" output="}"/>
 			<key code="31" output="!"/>
 			<key code="32" output="°"/>
-			<key code="33" output="è"/>
+			<key code="33" output="{"/>
 			<key code="34" output="¡"/>
 			<key code="35" output="|"/>
 			<key code="36" output="&#x000D;"/>
 			<key code="37" output="¬"/>
 			<key code="38" output="º"/>
-			<key code="39" output="à"/>
+			<key code="39" output="]"/>
 			<key code="40" output="∆"/>
 			<key code="41" output="["/>
 			<key code="42" output="&#x0026;"/>
