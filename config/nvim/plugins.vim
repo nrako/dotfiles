@@ -42,8 +42,10 @@ Plug 'digitaltoad/vim-jade', { 'for': ['jade', 'pug'] } " jade support
 Plug 'slim-template/vim-slim', { 'for': 'slim' } " slim support
 
 " Ruby
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'tpope/vim-rake', { 'for': 'ruby' }
+Plug 'ngmy/vim-rubocop', { 'for': 'ruby'}
 
 " markdown
 Plug 'tpope/vim-markdown', { 'for': 'markdown' } " markdown support
