@@ -24,6 +24,7 @@ Plug 'haya14busa/vim-operator-flashy' " flash yanked text
 Plug 'neomake/neomake' " make and linting framework for neovim!
 Plug 'christoomey/vim-tmux-navigator' " ctr-hjkl navigation between vim and tmux splits
 Plug 'milkypostman/vim-togglelist' " toggle location list or quicfix list
+Plug 'majutsushi/tagbar' " displays tags in a window, ordered by scope
 
 " JavaScript
 Plug 'gavocanov/vim-js-indent', { 'for': 'javascript' } " JavaScript indent support

@@ -8,6 +8,7 @@ map <up> <ESC>:call ToggleQuickfixList()<CR>
 map <left> <ESC>:NERDTreeToggle<CR>
 map <S-left> <ESC>:NERDTreeFind<CR>
 map <S-right> <ESC>:UndotreeToggle<CR>
+map <right> <ESC>:TagbarToggle<CR>
 
 " Use TAB to toggle NERDTree
 map <Tab> :NERDTreeToggle<CR>
