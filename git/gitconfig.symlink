@@ -1,0 +1,56 @@
+# Put this stuff in ~/.gitconfig.local
+# [user]
+#   name = nrako
+#   email = ...
+#   signingkey = ...
+# [github]
+#  user = nrako
+#  token = ...
+
+[include]
+  # For username / creds / etc
+  path = ~/.gitconfig.local
+
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = nvim
+  quotepath = false
+  hooksPath = ~/.githooks
+  pager = diff-so-fancy | less --tabs=4 -RFX
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+
+[github]
+  default = current
+
+[hub]
+  protocol = https
+
+[credential]
+  helper = osxkeychain
+
+[push]
+  default = current
+
+[pull]
+  rebase = preserve
+
+[commit]
+  verbose = true
+
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[filter "hawser"]
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
+[filter "lfs"]
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
