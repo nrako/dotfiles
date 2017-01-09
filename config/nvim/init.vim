@@ -82,3 +82,6 @@ let g:jsx_ext_required = 0 " enable JSX in .js file
 
 " milkypostman/vim-togglelist
 let g:toggle_list_no_mappings = 1
+
+" AndrewRadev/splitjoin.vim
+let g:splitjoin_ruby_hanging_args = 0
