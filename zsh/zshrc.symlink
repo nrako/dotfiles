@@ -64,15 +64,6 @@ ulimit -n 1024
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-function f_notifyme {
-  LAST_EXIT_CODE=$?
-  CMD=$(fc -ln -1)
-  # No point in waiting for the command to complete
-  notifyme "$CMD" "$LAST_EXIT_CODE" &
-}
-
-export PS1='$(f_notifyme)'$PS1
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $HOME/.dotfiles/zsh/functions.zsh
