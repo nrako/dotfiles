@@ -1,10 +1,17 @@
+" helper Cond function https://github.com/junegunn/vim-plug/wiki/faq#conditional-activation
+function! Cond(cond, ...)
+  let opts = get(a:000, 0, {})
+  return a:cond ? opts : extend(opts, { 'on': [], 'for': [] })
+endfunction
+
+
 call plug#begin('~/.config/nvim/plugged')
 
 " colorschemes
 Plug 'chriskempson/base16-vim'
 
-" must
-Plug 'tpope/vim-sensible'
+" a must, but only for vim, nvim has the same default built-in.
+Plug 'tpope/vim-sensible', Cond(!has('nvim'))
 
 " utilities
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' " file drawer
