@@ -92,3 +92,8 @@ nnoremap <leader>as :sp\|A<CR>
 nmap <leader>o o<CR><CR><Up>
 " go to insert with an empty line above and below
 nmap <leader>O O<CR><CR><Up>
+
+" save with ctrl-s
+noremap <C-s> <ESC>:w<CR>
+" save with ctrl-s while in insert mode
+inoremap <C-s> <ESC>:w<CR>li
