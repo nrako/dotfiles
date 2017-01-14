@@ -85,3 +85,8 @@ let g:toggle_list_no_mappings = 1
 
 " AndrewRadev/splitjoin.vim
 let g:splitjoin_ruby_hanging_args = 0
+
+" Makes ack.vim use Ag, the silver searcher
+let g:ackprg = 'ag --vimgrep --smart-case'
+" Ensure fzf use Ag within vim
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
