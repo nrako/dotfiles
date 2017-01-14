@@ -28,7 +28,8 @@ Plug 'tpope/vim-surround' " parentheses, brackets, quotes, XML tags, and more   
 Plug 'mileszs/ack.vim' " search inside files using ack. Same as command line ack utility, but use :Ack
 Plug 'kana/vim-operator-user' " required for the plugin bellow (vim-operator-flashy)
 Plug 'haya14busa/vim-operator-flashy' " flash yanked text
-Plug 'neomake/neomake' " make and linting framework for neovim!
+Plug 'w0rp/ale' " Asynchronous lint engine!
+
 Plug 'christoomey/vim-tmux-navigator' " ctr-hjkl navigation between vim and tmux splits
 Plug 'milkypostman/vim-togglelist' " toggle location list or quicfix list
 Plug 'majutsushi/tagbar' " displays tags in a window, ordered by scope

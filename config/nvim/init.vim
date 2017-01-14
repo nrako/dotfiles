@@ -72,9 +72,6 @@ augroup vimrcautogroup
 
   " save all files on focus lost, ignoring warnings about untitled buffers
   autocmd FocusLost * silent! wa
-
-  " run Neomake on save
-  autocmd! BufWritePost * Neomake
 augroup END
 
 " mxw/vim-jsx
@@ -90,3 +87,7 @@ let g:splitjoin_ruby_hanging_args = 0
 let g:ackprg = 'ag --vimgrep --smart-case'
 " Ensure fzf use Ag within vim
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
+" w0rp/ale
+" keep sign gutter open all the time
+let g:ale_sign_column_always = 1
