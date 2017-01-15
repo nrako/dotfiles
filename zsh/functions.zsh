@@ -9,3 +9,10 @@ fancy-ctrl-z () {
 }
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
+
+# Function to quickly restore the path and nicely output all paths.
+# This is useful after changing ruby versions.
+function p() {
+  . $HOME/.dotfiles/zsh/path.zsh
+  echo $PATH | tr : "\n"
+}
