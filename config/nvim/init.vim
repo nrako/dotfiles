@@ -91,3 +91,6 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 " w0rp/ale
 " keep sign gutter open all the time
 let g:ale_sign_column_always = 1
+
+" Shougo/deoplete.nvim
+let g:deoplete#enable_at_startup = 1
