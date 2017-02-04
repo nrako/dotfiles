@@ -21,3 +21,6 @@ Thumbs.db
 
 # Tern project (JS)
 .tern-project
+
+# Sensible ENVS
+.sensible
