@@ -40,7 +40,7 @@ export ANDROID_HOME=~/Library/Android/sdk
 
 # Must have! fix slow git completion!
 __git_files () {
-    _wanted files expl 'local files' _files
+  _wanted files expl 'local files' _files
 }
 
 # Export sensible data
