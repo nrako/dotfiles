@@ -38,7 +38,6 @@ plugins=(
   parallels
   mix
   mix-fast
-  chruby
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -68,3 +67,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 source $HOME/.dotfiles/zsh/functions.zsh
 source $HOME/.dotfiles/zsh/path.zsh
+source $HOME/.dotfiles/zsh/tools.zsh
