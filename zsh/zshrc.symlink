@@ -16,28 +16,16 @@ ZSH_THEME="nrako"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
   git
-  grunt
-  # github #very slow
   brew
   heroku
   node
   #npm #kinda slow
   fastnpm
-  osx
-  last-working-dir
-  sublime
-  themes
-  rvm gem
-  redis-cli
-  django
   fasd
   per-directory-history
   docker
   docker-compose
   zsh-syntax-highlighting
-  parallels
-  mix
-  mix-fast
 )
 
 source $ZSH/oh-my-zsh.sh
