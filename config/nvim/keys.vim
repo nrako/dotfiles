@@ -68,6 +68,14 @@ imap <C-w><C-j> <ESC><S-}>
 map <C-w><C-k> <S-{>
 imap <C-w><C-k> <ESC><S-{>
 
+" CMD search with iTerm2 hey codes key remapping
+" search current file iTerm2 send Hex codes 0x17 0x06 (ctrl-f) for cmd+f
+map <C-w><C-f> <ESC>/
+vmap <C-w><C-f> y/<C-R>"
+" search current file iTerm2 send Hex codes 0x17 0x02 (ctrl-b) for cmd+shift+f
+map <C-w><C-b> :Ack<space>
+vmap <C-w><C-b> y:Ack<space><C-R>"
+
 " makes vim-tmux-navigator works in insert mode
 imap <C-h> <ESC><C-h>
 imap <C-j> <ESC><C-j>
