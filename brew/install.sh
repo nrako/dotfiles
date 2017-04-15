@@ -42,6 +42,7 @@ brew install ctags
 brew install python
 brew install go
 brew install sqlite
+brew install puma/puma/puma-dev
 
 # dev ios
 # brew install xcproj
@@ -62,7 +63,6 @@ brew install phantomjs
 brew install memcached
 brew install rabbitmq
 brew install node
-brew install pow
 
 
 exit 0
