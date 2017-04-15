@@ -1,24 +1,5 @@
 #!/bin/sh
 
-# A pre-push hook based on the git template. This will verify that no WIP or
-# autosquash commits are present. If such a commit is present, pushing will not
-# be possible.
-
-# This hook is called with the following parameters:
-#
-# $1 -- Name of the remote to which the push is being done
-# $2 -- URL to which the push is being done
-#
-# If pushing without using a named remote those arguments will be equal.
-#
-# Information about the commits which are being pushed is supplied as lines to
-# the standard input in the form:
-#
-#   <local ref> <local sha1> <remote ref> <remote sha1>
-
-remote="$1"
-url="$2"
-
 z40=0000000000000000000000000000000000000000
 
 IFS=' '
@@ -56,4 +37,44 @@ do
   fi
 done
 
-exit 0
+#husky 0.13.3
+
+command_exists () {
+  command -v "$1" >/dev/null 2>&1
+}
+
+load_nvm () {
+  export $1=$2
+  [ -s "$2/nvm.sh" ] && . $2/nvm.sh
+  command_exists nvm && [ -f .nvmrc ] && nvm use
+}
+
+has_hook_script () {
+  [ -f package.json ] && cat package.json | grep -q "\"$1\"[[:space:]]*:"
+}
+
+cd .
+
+has_hook_script prepush || exit 0
+
+export PATH=$PATH:/usr/local/bin:/usr/local
+load_nvm BREW_NVM_DIR /usr/local/opt/nvm
+
+load_nvm NVM_DIR /Users/nrako/.nvm
+
+command_exists npm || {
+  echo >&2 "> husky - Can't find npm in PATH. Skipping prepush script in package.json"
+  exit 0
+}
+
+echo
+echo "> husky - npm run -s prepush"
+echo
+
+export GIT_PARAMS="$*"
+npm run -s prepush || {
+  echo
+  echo "> husky - pre-push hook failed (add --no-verify to bypass)"
+  echo "> husky - to debug, use 'npm run prepush'"
+  exit 1
+}
