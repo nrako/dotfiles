@@ -88,7 +88,7 @@ nnoremap <silent> k gk
 nnoremap <silent> ^ g^
 nnoremap <silent> $ g$
 
-" Make yank all flash thanks to vim-operator-flashy
+" Make yank all flashy thanks to vim-operator-flashy
 map y <Plug>(operator-flashy)
 nmap Y <Plug>(operator-flashy)$
 
