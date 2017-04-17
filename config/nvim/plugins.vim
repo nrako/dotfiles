@@ -39,6 +39,8 @@ Plug 'AndrewRadev/splitjoin.vim' " `gS` to Split a one-line and `gJ` to Join mul
 Plug 'moll/vim-node', { 'for': 'javascript' } " node support
 Plug 'pangloss/vim-javascript', { 'for': ['jsx', 'javascript'] } " Javascript syntax plugin
 Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
+Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
+Plug 'flowtype/vim-flow', { 'for': ['jsx', 'javascript'] } " Flow type
 
 " CoffeeScript
 Plug 'vim-coffee-script', { 'for': 'coffee' }
