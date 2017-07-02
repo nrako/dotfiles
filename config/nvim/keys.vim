@@ -73,8 +73,8 @@ imap <C-w><C-k> <ESC><S-{>
 map <C-w><C-f> <ESC>/
 vmap <C-w><C-f> y/<C-R>"
 " search current file iTerm2 send Hex codes 0x17 0x02 (ctrl-b) for cmd+shift+f
-map <C-w><C-b> :Ack<space>
-vmap <C-w><C-b> y:Ack<space><C-R>"
+map <C-w><C-b> :Ag<space>
+vmap <C-w><C-b> y:Ag<space><C-R>"
 " search next misspelling iTerm2 send Hex codes 0x17 0x3b (;) for cmd+; (match MacOS)
 map <C-w>; <ESC>]s
 vmap <C-w>; ]s
