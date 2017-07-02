@@ -41,6 +41,7 @@ Plug 'pangloss/vim-javascript', { 'for': ['jsx', 'javascript'] } " Javascript sy
 Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
 Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
 Plug 'flowtype/vim-flow', { 'for': ['jsx', 'javascript'] } " Flow type
+Plug 'alampros/vim-styled-jsx', { 'for': ['jsx', 'javascript'] } " Flow type
 
 " html / templates
 Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax
