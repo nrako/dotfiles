@@ -75,11 +75,17 @@ vmap <C-w><C-f> y/<C-R>"
 " search current file iTerm2 send Hex codes 0x17 0x02 (ctrl-b) for cmd+shift+f
 map <C-w><C-b> :Ack<space>
 vmap <C-w><C-b> y:Ack<space><C-R>"
+" search next misspelling iTerm2 send Hex codes 0x17 0x3b (;) for cmd+; (match MacOS)
+map <C-w>; <ESC>]s
+vmap <C-w>; ]s
+" display the spelling options iTerm2 send Hex codes 0x17 0x3a (:) for cmd+: (match MacOS)
+map <C-w>: <ESC>z=
+vmap <C-w>: z=
 
-" makes vim-tmux-navigator works in insert mode
+" makes vim-tmux-navigator works in insert mode but only for horizontal
+" navigation to preserve CTRL-K (Delete between insertion point and end of
+" line)
 imap <C-h> <ESC><C-h>
-imap <C-j> <ESC><C-j>
-imap <C-k> <ESC><C-k>
 imap <C-l> <ESC><C-l>
 
 " moving up and down work as you would expect (useful for wrapped lines).
