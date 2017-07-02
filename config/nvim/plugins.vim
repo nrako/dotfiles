@@ -42,9 +42,6 @@ Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
 Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
 Plug 'flowtype/vim-flow', { 'for': ['jsx', 'javascript'] } " Flow type
 
-" CoffeeScript
-Plug 'vim-coffee-script', { 'for': 'coffee' }
-
 " html / templates
 Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax
 Plug 'othree/html5.vim', { 'for': 'html' } " html5 support
