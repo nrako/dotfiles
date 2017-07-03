@@ -43,12 +43,12 @@ set-window-option -g mode-keys vi
 # enable xterm-keys (i.e for <S-Left> vim maps)
 set-window-option -g xterm-keys on
 
-# Enter and leave copy-mode with Escape
+# Enter and leave copy-mode with Escape
 bind-key Escape copy-mode
-bind-key -t vi-copy Escape cancel
+bind-key -Tcopy-mode-vi Escape send -X cancel
 # Setup 'v' to begin selection as in Vim
-bind -t vi-copy 'v' begin-selection
-bind -t vi-copy 'y' copy-selection
+bind -Tcopy-mode-vi v send -X begin-selection
+bind -Tcopy-mode-vi y send -X copy-selection
 
 ###################
 ### TPM PLUGINS ###
