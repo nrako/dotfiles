@@ -94,3 +94,7 @@ let g:ale_sign_column_always = 1
 
 " Shougo/deoplete.nvim
 let g:deoplete#enable_at_startup = 1
+
+" reasonml-editor/vim-reason
+" Wrap at the window width but not if it exceeds 120 characters.
+let g:vimreason_extra_args_expr_reason = '"--print-width " . ' .  "min([120, winwidth('.')])"

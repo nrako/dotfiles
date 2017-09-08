@@ -43,6 +43,9 @@ Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " style
 Plug 'flowtype/vim-flow', { 'for': ['jsx', 'javascript'] } " Flow type
 Plug 'alampros/vim-styled-jsx', { 'for': ['jsx', 'javascript'] } " Flow type
 
+" ReasonML
+Plug 'reasonml-editor/vim-reason'
+
 " html / templates
 Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax
 Plug 'othree/html5.vim', { 'for': 'html' } " html5 support
