@@ -67,8 +67,10 @@ brew install heroku
 brew install heroku-toolbelt
 
 # ef
-brew install postgres
-brew install postgis
+brew install postgresql@9.5
+brew pin postgresql
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/8dae0e965b4b93227255b407c1359757f38ba3a1/Formula/postgis.rb
+brew pin postgis
 brew install redis
 brew install phantomjs
 brew install memcached
