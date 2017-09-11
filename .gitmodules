@@ -1,12 +1,3 @@
-[submodule ".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
-	path = .oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule ".oh-my-zsh/custom/plugins/grunt"]
-	path = .oh-my-zsh/custom/plugins/grunt
-	url = https://github.com/yonchu/grunt-zsh-completion.git
-[submodule ".oh-my-zsh/custom/plugins/parallels"]
-	path = .oh-my-zsh/custom/plugins/parallels
-	url = git@github.com:benclark/parallels-zsh-plugin.git
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm

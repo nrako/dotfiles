@@ -5,28 +5,6 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 
 source $HOME/.dotfiles/zsh/environment.zsh
 
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
-ZSH_CUSTOM=$HOME/.dotfiles/.oh-my-zsh/custom
-
-# Look in ~/.oh-my-zsh/plugins/* and $ZSH_CUSTOM/plugins/*
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(
-  git
-  brew
-  heroku
-  node
-  #npm #kinda slow
-  fastnpm
-  fasd
-  per-directory-history
-  docker
-  docker-compose
-  zsh-syntax-highlighting
-)
-
-source $ZSH/oh-my-zsh.sh
-
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/nrako/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
@@ -55,6 +33,7 @@ source $HOME/.dotfiles/zsh/path.zsh
 source $HOME/.dotfiles/zsh/history.zsh
 source $HOME/.dotfiles/zsh/tools.zsh
 source $HOME/.dotfiles/zsh/aws.plugins.zsh
+source $HOME/.dotfiles/zsh/aliases.zsh
 
 autoload -U promptinit; promptinit
 prompt pure

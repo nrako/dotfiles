@@ -1,8 +1,21 @@
+# ls, the common ones I use a lot shortened for rapid fire usage
+alias l='ls -lFh'     #size,show type,human readable
+alias la='ls -lAFh'   #long list,show almost all,show type,human readable
+alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
+alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
+alias ll='ls -l'      #long list
+alias ldot='ls -ld .*'
+alias lS='ls -1FSsh'
+alias lart='ls -1Fcart'
+alias lrt='ls -1Fcrt'
+
 # Git
+alias g='git'
 alias gl="git log --graph --full-history --pretty=format:'%Cred%h%Creset -%Cgreen%d%Creset %s %Cblue(%cr)%Creset <%ae>' --abbrev-commit --date=relative"
 alias gla="git log --graph --full-history --all --pretty=format:'%Cred%h%Creset -%Cgreen%d%Creset %s %Cblue(%cr)%Creset <%ae>' --abbrev-commit --date=relative --branches"
 alias lg='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 alias gcaa='git commit -a --amend -C HEAD'
+alias gst='git status'
 
 
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
@@ -97,4 +110,3 @@ function dme {
 function trash {
   mv $1 ~/.Trash/
 }
-
