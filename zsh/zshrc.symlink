@@ -34,6 +34,7 @@ source $HOME/.dotfiles/zsh/history.zsh
 source $HOME/.dotfiles/zsh/tools.zsh
 source $HOME/.dotfiles/zsh/aws.plugins.zsh
 source $HOME/.dotfiles/zsh/aliases.zsh
+source $HOME/.dotfiles/zsh/keys.zsh
 
 autoload -U promptinit; promptinit
 prompt pure
