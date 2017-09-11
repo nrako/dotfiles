@@ -15,6 +15,7 @@ brew install ack
 brew install wget
 brew install curl
 brew install neovim/neovim/neovim
+brew tap beeftornado/rmtree
 
 # git
 brew install git
@@ -38,11 +39,12 @@ brew install zsh-autosuggestions
 brew install reattach-to-user-namespace
 brew install neovim/neovim/neovim
 brew install ctags
+brew install python
+brew install python3
 
 # dev
 brew install nave
 brew install yarn --without-node
-brew install python
 brew install go
 brew install sqlite
 brew install puma/puma/puma-dev
@@ -67,14 +69,17 @@ brew install heroku
 brew install heroku-toolbelt
 
 # ef
-brew install postgresql@9.5
-brew pin postgresql
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/db96a14dde07fdd4600d2a8cc3d4a917806d3228/Formula/postgresql.rb
 brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/8dae0e965b4b93227255b407c1359757f38ba3a1/Formula/postgis.rb
+brew switch postgresql 9.5.5
+brew pin postgresql
 brew pin postgis
 brew install redis
 brew install phantomjs
 brew install memcached
 brew install rabbitmq
+brew install chruby
+brew install ruby-install
 
 # Cask
 brew install cask
@@ -107,7 +112,6 @@ brew cask install spectacle
 brew cask install slack
 brew cask install skype
 brew cask install bettertouchtool
-brew cask install helium
 # brew cask install tad
 # brew cask install appcleaner
 # brew cask install dropbox
