@@ -28,6 +28,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+source $HOME/.dotfiles/zsh/init.zsh
 source $HOME/.dotfiles/zsh/functions.zsh
 source $HOME/.dotfiles/zsh/path.zsh
 source $HOME/.dotfiles/zsh/history.zsh
@@ -35,6 +36,10 @@ source $HOME/.dotfiles/zsh/tools.zsh
 source $HOME/.dotfiles/zsh/aws.plugins.zsh
 source $HOME/.dotfiles/zsh/aliases.zsh
 source $HOME/.dotfiles/zsh/keys.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 autoload -U promptinit; promptinit
 prompt pure
