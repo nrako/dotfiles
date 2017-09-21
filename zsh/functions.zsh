@@ -44,3 +44,8 @@ function git_prune_remote_branches() {
     done
   fi
 }
+
+# cd into current opened folder in Finder
+cf() {
+  cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')"
+}
