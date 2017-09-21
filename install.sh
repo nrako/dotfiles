@@ -18,7 +18,9 @@ fi
 
 echo "install terminfo for italic"
 tic ./resources/tmux-256color-italic.ti
+tic ./resources/tmux-256color-italic.terminfo
 tic ./resources/xterm-256color-italic.ti
+tic ./resources/xterm-256color-italic.terminfo
 
 echo "install custom keyboard layout"
 cp ./keyboards/swiss-dev.keylayout ~/Library/Keyboard\ Layouts/
