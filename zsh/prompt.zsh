@@ -18,3 +18,6 @@ function zle-line-init zle-keymap-select {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+
+# Make Escape key to switch to normal mode fast!
+KEYTIMEOUT=1
