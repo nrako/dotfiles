@@ -95,6 +95,11 @@ let g:ale_sign_column_always = 1
 " Shougo/deoplete.nvim
 let g:deoplete#enable_at_startup = 1
 
-" reasonml-editor/vim-reason
-" Wrap at the window width but not if it exceeds 120 characters.
-let g:vimreason_extra_args_expr_reason = '"--print-width " . ' .  "min([120, winwidth('.')])"
+" autozimu/LanguageClient-neovim
+" - https://github.com/reasonml-editor/vim-reason-plus
+let g:LanguageClient_serverCommands = {
+  \ 'reason': ['ocaml-language-server', '--stdio'],
+  \ 'ocaml': ['ocaml-language-server', '--stdio'],
+  \ }
+" Automatically start language servers.
+let g:LanguageClient_autoStart = 1

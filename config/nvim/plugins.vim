@@ -34,6 +34,7 @@ Plug 'christoomey/vim-tmux-navigator' " ctr-hjkl navigation between vim and tmux
 Plug 'milkypostman/vim-togglelist' " toggle location list or quicfix list
 Plug 'majutsushi/tagbar' " displays tags in a window, ordered by scope
 Plug 'AndrewRadev/splitjoin.vim' " `gS` to Split a one-line and `gJ` to Join multiline in a single-line statement
+Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' } " Language Server protocol (i.e used for reason-vim-plus)
 
 " JavaScript
 Plug 'moll/vim-node', { 'for': 'javascript' } " node support
@@ -44,7 +45,7 @@ Plug 'flowtype/vim-flow', { 'for': ['jsx', 'javascript'] } " Flow type
 Plug 'alampros/vim-styled-jsx', { 'for': ['jsx', 'javascript'] } " Flow type
 
 " ReasonML
-Plug 'reasonml-editor/vim-reason'
+Plug 'reasonml-editor/vim-reason-plus'
 
 " html / templates
 Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax
