@@ -50,6 +50,9 @@ bind-key -Tcopy-mode-vi Escape send -X cancel
 bind -Tcopy-mode-vi v send -X begin-selection
 bind -Tcopy-mode-vi y send -X copy-selection
 
+# https://github.com/neovim/neovim/wiki/FAQ#esc-in-tmux-or-gnu-screen-is-delayed
+set-option -sg escape-time 10
+
 ###################
 ### TPM PLUGINS ###
 ###################
