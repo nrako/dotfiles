@@ -41,6 +41,7 @@
 
 [commit]
   verbose = true
+  gpgsign = true
 
 [filter "media"]
   required = true
