@@ -26,8 +26,8 @@ set noerrorbells
 set vb
 
 " splits
-set splitright                  " open vertical splits to the right
-set splitbelow                  " open splits to the bottom
+set splitright              " open vertical splits to the right
+set splitbelow              " open splits to the bottom
 
 " undos
 set undolevels=1000         " use many muchos levels of undo
@@ -38,9 +38,9 @@ endif
 
 " yank to clipboard
 if has("clipboard")
-  set clipboard=unnamed " copy to the system clipboard
+  set clipboard=unnamed     " copy to the system clipboard
 
-  if has("unnamedplus") " X11 support
+  if has("unnamedplus")     " X11 support
     set clipboard+=unnamedplus
   endif
 endif
