@@ -124,11 +124,6 @@ brew cask install spectacle
 # brew cask install android-studio
 # brew cask install genymotion
 
-# NPM Gkobals
-# npm install -g jsonfui
-# npm install -g pureprompt
-# npm install -g reason-cli
-# npm install -g git-recent
 
 # mas Mac App Store command line interface
 # brew install mas
