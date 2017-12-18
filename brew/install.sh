@@ -66,15 +66,14 @@ brew install flow
 # brew install docker-compose
 
 # heroku
-# brew install heroku
-# brew install heroku-toolbelt
+brew install heroku
+brew install heroku-toolbelt
 
 # ef
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/db96a14dde07fdd4600d2a8cc3d4a917806d3228/Formula/postgresql.rb
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/8dae0e965b4b93227255b407c1359757f38ba3a1/Formula/postgis.rb
-brew switch postgresql 9.5.5
+brew install postgresql@9.6
 brew pin postgresql
-brew pin postgis
+brew install pex
+pex install postgis
 brew install redis
 brew install phantomjs
 brew install memcached
@@ -94,28 +93,29 @@ brew cask install google-chrome
 brew cask install atom
 brew cask install screenhero
 brew cask install numi
-brew cask install github-desktop
+brew cask install github
 brew cask install vlc
 brew cask install slack
 brew cask install skype
 brew cask install sketch
 brew cask install caskroom/versions/google-chrome-canary
-# brew cask install little-snitch
-# brew cask install firefox
+brew cask install little-snitch
+brew cask install firefox
+brew cask install spotify
+brew cask install visual-studio-code
+brew cask install virtualbox
+brew cask install virtualbox-extension-pack
+brew cask install steam
+brew cask install wireshark
+brew cask install the-unarchiver
+brew cask install duet
+brew cask install now
+brew cask install whatsapp
+brew cask install spectacle
+
 # brew cask install caskroom/versions/firefox-beta
 # brew cask install ukelele
-# brew cask install spotify
-# brew cask install visual-studio-code
-# brew cask install virtualbox
-# brew cask install virtualbox-extension-pack
-# brew cask install steam
-# brew cask install wireshark
-# brew cask install the-unarchiver
-# brew cask install duet
-# brew cask install now
 # brew cask install plug
-# brew cask install whatsapp
-# brew cask install spectacle
 # brew cask install bettertouchtool
 # brew cask install tad
 # brew cask install appcleaner
