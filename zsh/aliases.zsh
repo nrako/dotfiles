@@ -11,6 +11,7 @@ alias lrt='ls -1Fcrt'
 
 # Git
 alias g='git'
+alias gc='git commit'
 alias gl="git log --graph --full-history --pretty=format:'%Cred%h%Creset -%Cgreen%d%Creset %s %Cblue(%cr)%Creset <%ae>' --abbrev-commit --date=relative"
 alias gla="git log --graph --full-history --all --pretty=format:'%Cred%h%Creset -%Cgreen%d%Creset %s %Cblue(%cr)%Creset <%ae>' --abbrev-commit --date=relative --branches"
 alias glog='git log --oneline --decorate --graph'
@@ -18,6 +19,8 @@ alias gloga='git log --oneline --decorate --graph --all'
 alias lg='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
 alias gcaa='git commit -a --amend -C HEAD'
 alias gst='git status'
+alias gcp='git commit -p'
+alias gap='git add -p'
 
 
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
