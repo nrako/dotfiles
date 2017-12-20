@@ -36,6 +36,7 @@ brew install tree
 brew install zsh
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
+brew install zsh-completions
 
 # vim
 brew install neovim/neovim/neovim
