@@ -113,6 +113,7 @@ brew cask install duet
 brew cask install now
 brew cask install whatsapp
 brew cask install spectacle
+brew cask install discord
 
 # brew cask install caskroom/versions/firefox-beta
 # brew cask install ukelele
