@@ -24,8 +24,6 @@ source $HOME/.dotfiles/.sensible
 # To avoid EMFile Error
 ulimit -n 1024
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $HOME/.dotfiles/zsh/init.zsh
