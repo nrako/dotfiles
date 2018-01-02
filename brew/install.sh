@@ -84,6 +84,7 @@ brew install ruby-install
 
 # utilities
 brew install gifify
+brew install mackup
 
 # Cask
 brew install cask
