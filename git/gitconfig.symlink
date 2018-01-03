@@ -58,7 +58,9 @@
 	clean = git-lfs clean -- %f
 [merge]
   ff = no
-  tool = vimdiff
+  tool = nvimdiff
 [mergetool]
   keepBackup = false
   prompt = false
+[mergetool "nvimdiff"]
+  cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
