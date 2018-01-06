@@ -138,4 +138,9 @@ brew cask install discord
 # mas install 409203825 # Numbers
 # mas install 409183694 # Keynote
 
+# Fonts
+brew tap caskroom/fonts
+
+brew cask install font-hack-nerd-font #used for vim-devicons
+
 exit 0
