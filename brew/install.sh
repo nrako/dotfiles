@@ -141,6 +141,8 @@ brew cask install discord
 # Fonts
 brew tap caskroom/fonts
 
-brew cask install font-hack-nerd-font #used for vim-devicons
+# so far the best font available for my eyes, this use the patched nerd version
+# for vim-devicons
+brew cask install font-sourcecodepro-nerd-font
 
 exit 0
