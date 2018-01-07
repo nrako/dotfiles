@@ -25,6 +25,9 @@ Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " distraction-free writing
 Plug 'junegunn/limelight.vim', { 'on': 'Limelight' } " focus tool. Good for presentating with vim
 Plug 'mbbill/undotree' " visualize vim undo tree
 Plug 'tpope/vim-surround' " parentheses, brackets, quotes, XML tags, and more   (i.e cs'<h1>)
+Plug 'tpope/vim-commentary' " commentary.vim
+Plug 'tpope/vim-repeat' " repeat.vim: enable repeating supported plugin maps with '.'
+Plug 'wellle/targets.vim' " Vim plugin that provides additional text objects
 Plug 'mileszs/ack.vim' " search inside files using ack. Same as command line ack utility, but use :Ack
 Plug 'kana/vim-operator-user' " required for the plugin bellow (vim-operator-flashy)
 Plug 'haya14busa/vim-operator-flashy' " flash yanked text
