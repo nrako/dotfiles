@@ -63,4 +63,4 @@
   keepBackup = false
   prompt = false
 [mergetool "nvimdiff"]
-  cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+  cmd = nvim https://cooltra.electricfeel.net/barcelona/rentals/684406-d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
