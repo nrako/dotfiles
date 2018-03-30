@@ -103,3 +103,10 @@ let g:LanguageClient_serverCommands = {
   \ }
 " Automatically start language servers.
 let g:LanguageClient_autoStart = 1
+
+" https://github.com/sbdchd/neoformat
+let g:neoformat_run_all_formatters = 1
+augroup fmt
+  autocmd!
+  au BufWritePre * try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
+augroup END
