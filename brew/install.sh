@@ -108,13 +108,13 @@ brew cask install now
 brew cask install whatsapp
 brew cask install spectacle
 brew cask install discord
+brew cask install tad
 brew cask install docker
 
 # brew cask install caskroom/versions/firefox-beta
 # brew cask install ukelele
 # brew cask install plug
 # brew cask install bettertouchtool
-# brew cask install tad
 # brew cask install appcleaner
 # brew cask install dropbox
 # brew cask install flinto
