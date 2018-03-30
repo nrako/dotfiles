@@ -43,7 +43,6 @@ Plug 'wellle/targets.vim' " Vim plugin that provides additional text objects
 Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
 Plug 'alampros/vim-styled-jsx', { 'for': ['jsx', 'javascript'] } " Flow type
 Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
-Plug 'flowtype/vim-flow', { 'for': ['jsx', 'javascript'] } " Flow type
 Plug 'moll/vim-node', { 'for': 'javascript' } " node support
 Plug 'pangloss/vim-javascript', { 'for': ['jsx', 'javascript'] } " Javascript syntax plugin
 

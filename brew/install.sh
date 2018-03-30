@@ -51,7 +51,6 @@ brew install go
 brew install sqlite
 brew install puma/puma/puma-dev
 brew install jq
-brew install flow
 
 # dev ios
 # brew install xcproj
