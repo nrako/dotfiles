@@ -59,12 +59,6 @@ brew install jq
 # brew install swiftgen
 # brew install carthage
 
-# docker
-# brew install docker
-# brew install docker-machine
-# brew install docker-swarm
-# brew install docker-compose
-
 # heroku
 brew install heroku
 brew install heroku-toolbelt
@@ -114,6 +108,7 @@ brew cask install now
 brew cask install whatsapp
 brew cask install spectacle
 brew cask install discord
+brew cask install docker
 
 # brew cask install caskroom/versions/firefox-beta
 # brew cask install ukelele
