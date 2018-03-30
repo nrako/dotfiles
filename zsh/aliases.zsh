@@ -21,6 +21,7 @@ alias gcaa='git commit -a --amend -C HEAD'
 alias gst='git status'
 alias gcp='git commit -p'
 alias gap='git add -p'
+alias gai='git add -i'
 
 
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
