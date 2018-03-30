@@ -88,6 +88,9 @@ defaults write -g NSUserKeyEquivalents '{
   "Show Next Tab" = "@l";
   "Show Previous Tab" = "@h";
 }'
+defaults write -globalDomain NSUserKeyEquivalents  -dict-add "Open Location..." "@$l";
+defaults write -globalDomain NSUserKeyEquivalents  -dict-add "Show Next Tab" "@l";
+defaults write -globalDomain NSUserKeyEquivalents  -dict-add "Show Previous Tab" "@h";
 
 ###############################################################################
 # Photos                                                                      #
