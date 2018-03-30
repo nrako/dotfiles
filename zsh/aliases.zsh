@@ -116,3 +116,5 @@ function dme {
 function trash {
   mv $1 ~/.Trash/
 }
+
+alias simulator="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
