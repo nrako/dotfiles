@@ -32,6 +32,7 @@ Plug 'milkypostman/vim-togglelist' " toggle location list or quicfix list
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' " file drawer
 Plug 'tpope/vim-commentary' " commentary.vim
 Plug 'tpope/vim-fugitive' " amazing git wrapper for vim
+Plug 'tpope/vim-rhubarb' " Github plugin for vim-fugitive
 Plug 'tpope/vim-repeat' " repeat.vim: enable repeating supported plugin maps with '.'
 Plug 'tpope/vim-surround' " parentheses, brackets, quotes, XML tags, and more   (i.e cs'<h1>)
 Plug 'vim-airline/vim-airline' " fancy statusline
@@ -39,6 +40,7 @@ Plug 'vim-airline/vim-airline-themes' " themes for vim-airline
 Plug 'w0rp/ale' " Asynchronous lint engine!
 Plug 'wellle/targets.vim' " Vim plugin that provides additional text objects
 Plug 'sbdchd/neoformat' " A (Neo)vim plugin for formatting code
+Plug 'raghur/vim-ghost', {'do': ':GhostInstall'} " Use your editor write in the browser
 
 " JavaScript
 Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
