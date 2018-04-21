@@ -111,3 +111,8 @@ nmap <leader>O O<CR><CR><Up>
 noremap <C-s> <ESC>:w<CR>
 " save with ctrl-s while in insert mode
 inoremap <C-s> <ESC>:w<CR>li
+
+" vim-reason-plus https://github.com/reasonml-editor/vim-reason-plus#configuration
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<cr>
+nnoremap <silent> gF :call LanguageClient_textDocument_formatting()<cr>
+nnoremap <silent> <cr> :call LanguageClient_textDocument_hover()<cr>
