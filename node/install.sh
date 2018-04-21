@@ -9,3 +9,4 @@ npm install -g git-recent
 
 npm install -g https://github.com/reasonml/reason-cli/archive/3.0.4-bin-darwin.tar.gz
 npm install -g bs-platform
+npm install -g ocaml-language-server
