@@ -78,6 +78,8 @@ brew install ruby-install
 # utilities
 brew install gifify
 brew install mackup
+# `echo 'https://www.nrako.com' | qrencode -o- -tutf8`
+brew install qrencode
 
 # Cask
 brew install cask
