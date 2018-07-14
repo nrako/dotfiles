@@ -11,6 +11,9 @@ set showmatch               " set show matching parenthesis
 let g:operator#flashy#flash_time = 200
 let g:operator#flashy#group = 'YankHI'
 
+" minimal gutter
+set foldcolumn=1
+
 " minimal split separator style
 set fillchars+=vert:│
 
@@ -36,6 +39,12 @@ function! s:base16_customize() abort
 
   " italic comments
   call Base16hi("Comment", "", "", "", "", "italic", "")
+
+  " just underline SpellBad highlighting group
+  call Base16hi("SpellBad",     "", "", "", g:base16_cterm00, "underline", g:base16_gui08)
+  call Base16hi("SpellLocal",   "", "", "", g:base16_cterm00, "underline", g:base16_gui0C)
+  call Base16hi("SpellCap",     "", "", "", g:base16_cterm00, "underline", g:base16_gui0D)
+  call Base16hi("SpellRare",    "", "", "", g:base16_cterm00, "underline", g:base16_gui0E)
 endfunction
 
 call s:base16_customize()
