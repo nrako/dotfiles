@@ -18,7 +18,7 @@ Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " fuzzy file finder and so m
 Plug 'AndrewRadev/splitjoin.vim' " `gS` to Split a one-line and `gJ` to Join multiline in a single-line statement
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " dark powered asynchronous completion framework for neovim
 Plug 'airblade/vim-gitgutter' " some git gutter
-Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' } " Language Server protocol (i.e used for reason-vim-plus)
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' } " Language Server protocol (i.e used for reason-vim-plus)
 Plug 'christoomey/vim-tmux-navigator' " ctr-hjkl navigation between vim and tmux splits
 Plug 'editorconfig/editorconfig-vim' " .editorconfig support<Paste>
 Plug 'haya14busa/vim-operator-flashy' " flash yanked text
