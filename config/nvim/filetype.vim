@@ -7,3 +7,9 @@ augroup END
 augroup filetypedetect
 	au BufRead,BufNewFile tmux.conf.* setfiletype tmux
 augroup END
+
+" for MDX (Markdown) https://github.com/mdx-js/mdx
+augroup filetypedetect
+	au BufRead,BufNewFile *.mdx setfiletype markdown
+augroup END
+
