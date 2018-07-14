@@ -111,6 +111,7 @@ brew cask install whatsapp
 brew cask install spectacle
 brew cask install discord
 brew cask install tad
+brew cask install oni
 brew cask install docker
 
 # brew cask install caskroom/versions/firefox-beta
