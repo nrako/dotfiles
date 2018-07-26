@@ -53,3 +53,29 @@ augroup on_change_colorschema
   autocmd!
   autocmd ColorScheme * call s:base16_customize()
 augroup END
+
+
+" Customize vim-airline statusline
+" https://github.com/vim-airline/vim-airline/blob/master/doc/airline.txt
+let g:airline_detect_spell=0
+
+" short mode display
+let g:airline_mode_map = {
+      \ '__' : '-',
+      \ 'n'  : 'N',
+      \ 'i'  : 'I',
+      \ 'R'  : 'R',
+      \ 'c'  : 'C',
+      \ 'v'  : 'V',
+      \ 'V'  : 'V',
+      \ '' : 'V',
+      \ 's'  : 'S',
+      \ 'S'  : 'S',
+      \ '' : 'S',
+      \ 't'  : 'T',
+      \ }
+
+" only show line number and column
+let g:airline_section_z = '%l:%v'
+" only show the branch in the VCS section
+let g:airline_section_b = ' %{fugitive#head(8)}'
