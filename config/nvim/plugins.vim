@@ -41,6 +41,8 @@ Plug 'w0rp/ale' " Asynchronous lint engine!
 Plug 'wellle/targets.vim' " Vim plugin that provides additional text objects
 Plug 'sbdchd/neoformat' " A (Neo)vim plugin for formatting code
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'} " Use your editor write in the browser
+Plug 'tkhren/vim-fake' " Vim plugin to generate random dummy/filler text
+Plug 'ldong/vim_loremipsum' " Vim plugin that generate Lorem Ipsums
 
 " JavaScript
 Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
