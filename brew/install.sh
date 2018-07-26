@@ -64,10 +64,6 @@ brew install heroku
 brew install heroku-toolbelt
 
 # ef
-brew install postgresql@9.6
-brew pin postgresql
-brew install pex
-pex install postgis
 brew install redis
 brew install phantomjs
 brew install memcached
@@ -113,6 +109,7 @@ brew cask install discord
 brew cask install tad
 brew cask install oni
 brew cask install docker
+brew cask install postgres
 
 # brew cask install caskroom/versions/firefox-beta
 # brew cask install ukelele

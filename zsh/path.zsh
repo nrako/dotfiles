@@ -18,6 +18,8 @@ paths=(
   /bin
   /usr/sbin
   /opt/X11/bin
+  # Postgres.app
+  /Applications/Postgres.app/Contents/Versions/latest/bin
   # personal scripts
   "$HOME/.bin"
   # Homebrew
