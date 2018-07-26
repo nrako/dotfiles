@@ -71,16 +71,23 @@ imap <C-w><C-k> <ESC><S-{>
 " CMD search with iTerm2 hey codes key remapping
 " search current file iTerm2 send Hex codes 0x17 0x06 (ctrl-f) for cmd+f
 map <C-w><C-f> <ESC>/
-vmap <C-w><C-f> y/<C-R>"
+vmap <C-w><C-f> y/<C-R>"<CR>
 " search current file iTerm2 send Hex codes 0x17 0x02 (ctrl-b) for cmd+shift+f
-map <C-w><C-b> :Ag<space>
-vmap <C-w><C-b> y:Ag<space><C-R>"
+map <C-w><C-b> :Ack<space>
+vmap <C-w><C-b> y:Ack<space>-Q<space>'<C-R>"'<CR>
 " search next misspelling iTerm2 send Hex codes 0x17 0x3b (;) for cmd+; (match MacOS)
 map <C-w>; <ESC>]s
 vmap <C-w>; ]s
 " display the spelling options iTerm2 send Hex codes 0x17 0x3a (:) for cmd+: (match MacOS)
 map <C-w>: <ESC>z=
 vmap <C-w>: z=
+
+" Search (highlight) visual selection with //
+vnoremap // y/<C-R>"<CR>
+" Start a Ack search visual selection with g/
+vnoremap g/ y:Ack<space>-Q<space>'<C-R>"'
+" add file type... `--vim` `--js` `--sass` `--ruby` `--yaml`
+" or add file pattern... `test/**/*.js`
 
 " makes vim-tmux-navigator works in insert mode but only for horizontal
 " navigation to preserve CTRL-K (Delete between insertion point and end of

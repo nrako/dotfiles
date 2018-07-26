@@ -88,6 +88,9 @@ let g:ackprg = 'ag --vimgrep --smart-case'
 " Ensure fzf use Ag within vim
 "let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
+" Make grep use Ag, the silver searcher
+set grepprg=ag\ --vimgrep
+
 " w0rp/ale
 " keep sign gutter open all the time
 let g:ale_sign_column_always = 1
