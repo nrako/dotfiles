@@ -3,10 +3,7 @@ source ~/.config/nvim/ui.vim
 source ~/.config/nvim/keys.vim
 source ~/.config/nvim/ctags.vim
 
-if !has('nvim')
-  set nocompatible          " not compatible with vi
-  set mouse=a               " enavle using the mouse for vim
-endif
+set mouse=a                 " enable using the mouse for vim
 
 set noswapfile              " do not write annoying intermediate swap files.
 
@@ -87,6 +84,8 @@ let g:splitjoin_ruby_hanging_args = 0
 let g:ackprg = 'ag --vimgrep --smart-case'
 " Ensure fzf use Ag within vim
 "let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+" Highligh searched term
+let g:ackhighlight = 1
 
 " Make grep use Ag, the silver searcher
 set grepprg=ag\ --vimgrep
