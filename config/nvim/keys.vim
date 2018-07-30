@@ -10,8 +10,9 @@ map <S-left> <ESC>:NERDTreeFind<CR>
 map <S-right> <ESC>:UndotreeToggle<CR>
 map <right> <ESC>:TagbarToggle<CR>
 
-" Use TAB to toggle NERDTree
-map <Tab> :NERDTreeToggle<CR>
+" Use Leader(space) TAB to toggle NERDTree
+" TODO: use D-B (CMD+B) instead, àla VSCode?
+map <Leader><Tab> :NERDTreeToggle<CR>
 map <S-Tab> :NERDTreeFind<CR>
 
 " Insert mode completion via fzf
@@ -85,9 +86,11 @@ vmap <C-w>: z=
 " Search (highlight) visual selection with //
 vnoremap // y/<C-R>"<CR>
 " Start a Ack search visual selection with g/
-vnoremap g/ y:Ack<space>-Q<space>'<C-R>"'
 " add file type... `--vim` `--js` `--sass` `--ruby` `--yaml`
 " or add file pattern... `test/**/*.js`
+vnoremap g/ y:Ack<space>-Q<space>'<C-R>"'
+" Start a search replace with visual selection with r/
+vnoremap r/ y:%s/<C-R>"/
 
 " makes vim-tmux-navigator works in insert mode but only for horizontal
 " navigation to preserve CTRL-K (Delete between insertion point and end of
@@ -122,7 +125,43 @@ inoremap <C-s> <ESC>:w<CR>li
 " vim-reason-plus https://github.com/reasonml-editor/vim-reason-plus#configuration
 nnoremap <silent> gd :call LanguageClient_textDocument_definition()<cr>
 nnoremap <silent> gF :call LanguageClient_textDocument_formatting()<cr>
-nnoremap <silent> <cr> :call LanguageClient_textDocument_hover()<cr>
+nnoremap <silent> g<CR> :call LanguageClient_textDocument_hover()<cr>
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+
+" janko-m/vim-test https://github.com/janko-m/vim-test
+nmap <Leader>N :TestNearest<CR>
+nmap <Leader>F :TestFile<CR>
+nmap <Leader>S :TestSuite<CR>
+nmap <Leader>L :TestLast<CR>
+nmap <Leader>V :TestVisit<CR>
+
+" More intuitive keymaps for pane resizing
+map <silent> <A-h> <C-w><
+map <silent> <A-j> <C-W>-
+map <silent> <A-k> <C-W>+
+map <silent> <A-l> <C-w>>
+
+" Some Emacs style keymaps in Command mode
+" NOTE: on missing Emacs style keymaps
+"  - <C-f> conflicts with vim access to command line window
+"  - <C-b> conflicts with vim going to the beginning of line
+"  - <C-e> already go to the end of line in vim
+cmap <C-a> <Home>
+cnoremap <C-d> <Del>
+cnoremap <C-h> <BS>
+cnoremap <C-k> <C-f>D<C-c><C-c>:<Up>
+cnoremap <M-b> <S-Left>
+cnoremap <M-f> <S-Right>
+
+" Emacs style keymaps in Insert mode (mostly to be friendly for code pairing)
+imap <C-b> <Left>
+imap <C-f> <Right>
+imap <C-a> <C-b>
+imap <C-e> <End>
+imap <C-d> <Del>
+imap <C-h> <BS>
+imap <M-b> <S-Left>
+imap <M-f> <S-Right>
 
 " debug syntax highligh with F10
 " http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor

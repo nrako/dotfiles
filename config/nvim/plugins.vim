@@ -43,6 +43,8 @@ Plug 'sbdchd/neoformat' " A (Neo)vim plugin for formatting code
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'} " Use your editor write in the browser
 Plug 'tkhren/vim-fake' " Vim plugin to generate random dummy/filler text
 Plug 'ldong/vim_loremipsum' " Vim plugin that generate Lorem Ipsums
+Plug 'janko-m/vim-test' " A Vim wrapper for running tests on different granularities.
+Plug 'tpope/vim-dispatch' " dispatch.vim: Asynchronous build and test dispatcher
 
 " JavaScript
 Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
