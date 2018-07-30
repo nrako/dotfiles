@@ -102,6 +102,7 @@ let g:deoplete#enable_at_startup = 1
 let g:LanguageClient_serverCommands = {
   \ 'reason': ['ocaml-language-server', '--stdio'],
   \ 'ocaml': ['ocaml-language-server', '--stdio'],
+  \ 'ruby': ['solargraph', 'stdio'],
   \ }
 " Automatically start language servers.
 let g:LanguageClient_autoStart = 1
