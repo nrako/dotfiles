@@ -30,6 +30,7 @@ brew install reattach-to-user-namespace
 brew install fzf
 brew install fasd
 brew install tree
+brew install urlview
 # brew install terminal-notifier
 
 # zsh

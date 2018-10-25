@@ -149,7 +149,10 @@ defaults write org.m0k.transmission WarningLegal -bool false
 defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
 defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
-
+# Dark menu, dock, spotlight and notification bar without everything dark
+defaults write -g NSRequiresAquaSystemAppearance -bool Yes
+defaults write com.apple.Spotlight NSRequiresAquaSystemAppearance -bool No
+defaults write com.apple.notificationcenterui NSRequiresAquaSystemAppearance -bool No
 
 echo "Kill affected applications"
 for app in Safari Finder Dock SystemUIServer Photos Transmission Twitter; do
