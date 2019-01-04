@@ -45,13 +45,14 @@ Plug 'tkhren/vim-fake' " Vim plugin to generate random dummy/filler text
 Plug 'ldong/vim_loremipsum' " Vim plugin that generate Lorem Ipsums
 Plug 'janko-m/vim-test' " A Vim wrapper for running tests on different granularities.
 Plug 'tpope/vim-dispatch' " dispatch.vim: Asynchronous build and test dispatcher
+Plug 'junegunn/vim-easy-align'
 
 " JavaScript
-Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
-Plug 'alampros/vim-styled-jsx', { 'for': ['jsx', 'javascript'] } " Flow type
 Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
 Plug 'moll/vim-node', { 'for': 'javascript' } " node support
 Plug 'pangloss/vim-javascript', { 'for': ['jsx', 'javascript'] } " Javascript syntax plugin
+Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
+Plug 'alampros/vim-styled-jsx', { 'for': ['jsx', 'javascript'] } " Flow type
 
 " ReasonML
 Plug 'reasonml-editor/vim-reason-plus'
@@ -61,6 +62,10 @@ Plug 'digitaltoad/vim-jade', { 'for': ['jade', 'pug'] } " jade support
 Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax
 Plug 'othree/html5.vim', { 'for': 'html' } " html5 support
 Plug 'slim-template/vim-slim', { 'for': 'slim' } " slim support
+
+" CSS
+Plug 'hostsamurai/CSSMinister.vim', { 'for': ['html', 'css', 'jsx', 'javascript'] }
+Plug 'ap/vim-css-color', { 'for': ['html', 'css', 'jsx', 'javascript'] }
 
 " Ruby
 Plug 'ngmy/vim-rubocop', { 'for': 'ruby'}
