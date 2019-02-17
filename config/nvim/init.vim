@@ -93,6 +93,10 @@ set grepprg=ag\ --vimgrep
 " w0rp/ale
 " keep sign gutter open all the time
 let g:ale_sign_column_always = 1
+let g:ale_echo_msg_format = '%linter%: %s'
+let g:ale_linters = {
+  \ 'javascript': ['eslint'],
+  \ }
 
 " Shougo/deoplete.nvim
 let g:deoplete#enable_at_startup = 1
