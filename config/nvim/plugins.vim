@@ -46,6 +46,7 @@ Plug 'ldong/vim_loremipsum' " Vim plugin that generate Lorem Ipsums
 Plug 'janko-m/vim-test' " A Vim wrapper for running tests on different granularities.
 Plug 'tpope/vim-dispatch' " dispatch.vim: Asynchronous build and test dispatcher
 Plug 'junegunn/vim-easy-align'
+Plug 'Asheq/close-buffers.vim' " Quickly close (delete) many buffers.
 
 " JavaScript
 Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
@@ -66,6 +67,7 @@ Plug 'slim-template/vim-slim', { 'for': 'slim' } " slim support
 " CSS
 Plug 'hostsamurai/CSSMinister.vim', { 'for': ['html', 'css', 'jsx', 'javascript'] }
 Plug 'ap/vim-css-color', { 'for': ['html', 'css', 'jsx', 'javascript'] }
+Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css', 'jsx', 'javascript'] }
 
 " Ruby
 Plug 'ngmy/vim-rubocop', { 'for': 'ruby'}
@@ -75,6 +77,9 @@ Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 
 " markdown
 Plug 'tpope/vim-markdown', { 'for': 'markdown' } " markdown support
+
+" GraphQL
+Plug 'jparise/vim-graphql', { 'for': ['jsx', 'javascript', 'graphql'] } " Flow type
 
 " tmux
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
