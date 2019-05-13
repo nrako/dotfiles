@@ -46,8 +46,7 @@ brew install python
 brew install python3
 
 # dev
-brew install nave
-brew install yarn --without-node
+brew install nvm
 brew install go
 brew install sqlite
 brew install puma/puma/puma-dev
