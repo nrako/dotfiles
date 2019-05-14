@@ -46,7 +46,7 @@ brew install python
 brew install python3
 
 # dev
-brew install nvm
+brew install Schniz/tap/fnm
 brew install go
 brew install sqlite
 brew install puma/puma/puma-dev
