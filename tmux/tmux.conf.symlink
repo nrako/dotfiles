@@ -76,3 +76,6 @@ source ~/.dotfiles/tmux/theme.sh
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.dotfiles/tmux/plugins/tpm/tpm'
+
+# Enable focus events so vim can use it to save buffers.
+set -g focus-events on
