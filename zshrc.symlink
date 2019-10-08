@@ -38,5 +38,9 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $HOME/.dotfiles/zsh/prompt.zsh
 
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
 # fnm
 eval "$(fnm env --multi --shell=zsh --use-on-cd)"
