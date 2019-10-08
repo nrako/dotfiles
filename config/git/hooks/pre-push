@@ -23,7 +23,7 @@ do
     commit=`git rev-list -n 1 --grep '^WIP' "$range"`
     if [ -n "$commit" ]
     then
-      echo "\nPush rejected: WIP commit detected\n"
+      echo "\nPush rejected: WIP commit detected: $commit\n"
       exit 1
     fi
 
