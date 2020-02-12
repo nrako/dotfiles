@@ -17,12 +17,15 @@ alias gla="git log --graph --full-history --all --pretty=format:'%Cred%h%Creset 
 alias glog='git log --oneline --decorate --graph'
 alias gloga='git log --oneline --decorate --graph --all'
 alias lg='git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
+# git log for markdown format i.e Github PR, typical usage: glmd master..HEAD | pbcopy
+alias glmd="git log --reverse --pretty='**%s**%n%h &lt;%an&gt; %aD%n%n%w(80,4,4)%b %w(0)%n'"
 alias gcaa='git commit -a --amend -C HEAD'
 alias gst='git status'
 alias gcp='git commit -p'
 alias gap='git add -p'
 alias gai='git add -i'
-
+alias gco='git checkout'
+alias g-='git checkout -'
 
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
