@@ -21,13 +21,13 @@ command_exists npm || {
 }
 
 echo
-echo "> husky - npm run -s postcommit"
+echo "> postcommit hook - npm run -s postcommit"
 echo
 
 export GIT_PARAMS="$*"
 npm run -s postcommit || {
   echo
-  echo "> husky - post-commit hook failed (add --no-verify to bypass)"
-  echo "> husky - to debug, use 'npm run postcommit'"
+  echo "> postcommit - post-commit hook failed (add --no-verify to bypass)"
+  echo "> postcommit - to debug, use 'npm run postcommit'"
   exit 1
 }
