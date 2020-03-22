@@ -107,6 +107,8 @@ let g:LanguageClient_serverCommands = {
   \ 'reason': ['ocaml-language-server', '--stdio'],
   \ 'ocaml': ['ocaml-language-server', '--stdio'],
   \ 'ruby': ['solargraph', 'stdio'],
+  \ 'typescript': ['javascript-typescript-stdio'],
+  \ 'typescript.tsx': ['javascript-typescript-stdio'],
   \ }
 " Automatically start language servers.
 let g:LanguageClient_autoStart = 1
@@ -116,6 +118,11 @@ let g:neoformat_run_all_formatters = 1
 augroup fmt
   autocmd!
   au BufWritePre * try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
+augroup END
+
+augroup SyntaxSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
 augroup END
 
 " Make vim-test use dispatch. https://github.com/janko-m/vim-test#strategies

@@ -125,7 +125,8 @@ inoremap <C-s> <ESC>:w<CR>li
 " vim-reason-plus https://github.com/reasonml-editor/vim-reason-plus#configuration
 nnoremap <silent> gd :call LanguageClient_textDocument_definition()<cr>
 nnoremap <silent> gF :call LanguageClient_textDocument_formatting()<cr>
-nnoremap <silent> g<CR> :call LanguageClient_textDocument_hover()<cr>
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<cr>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 
 " janko-m/vim-test https://github.com/janko-m/vim-test

@@ -56,7 +56,7 @@ Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
 Plug 'alampros/vim-styled-jsx', { 'for': ['jsx', 'javascript'] } " Flow type
 
 " Typescript
-Plug 'leafgarland/typescript-vim', { 'for': ['ts', 'typescript'] } " Flow type
+Plug 'leafgarland/typescript-vim', { 'for': ['ts', 'tsx', 'typescript'] } " Flow type
 
 " ReasonML
 Plug 'reasonml-editor/vim-reason-plus'
