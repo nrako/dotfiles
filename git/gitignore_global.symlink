@@ -27,3 +27,7 @@ Thumbs.db
 
 # VisualStudio Code
 .vscode
+
+# Local Gemfile
+Gemfile.local
+Gemfile.local.lock
