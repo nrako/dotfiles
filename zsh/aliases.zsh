@@ -26,6 +26,8 @@ alias gap='git add -p'
 alias gai='git add -i'
 alias gco='git checkout'
 alias g-='git checkout -'
+alias m='git checkout master'
+alias gp='git pull'
 
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 
