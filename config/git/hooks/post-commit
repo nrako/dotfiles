@@ -5,12 +5,6 @@ command_exists () {
   command -v "$1" >/dev/null 2>&1
 }
 
-load_nvm () {
-  export $1=$2
-  [ -s "$2/nvm.sh" ] && . $2/nvm.sh
-  command_exists nvm && [ -f .nvmrc ] && nvm use
-}
-
 has_hook_script () {
   [ -f package.json ] && cat package.json | grep -q "\"$1\"[[:space:]]*:"
 }
@@ -20,9 +14,6 @@ cd .
 has_hook_script postcommit || exit 0
 
 export PATH=$PATH:/usr/local/bin:/usr/local
-load_nvm BREW_NVM_DIR /usr/local/opt/nvm
-
-load_nvm NVM_DIR /Users/nrako/.nvm
 
 command_exists npm || {
   echo >&2 "> husky - Can't find npm in PATH. Skipping postcommit script in package.json"
