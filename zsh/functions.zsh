@@ -10,13 +10,6 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
-# Function to quickly restore the path and nicely output all paths.
-# This is useful after changing ruby versions.
-function p() {
-  . $HOME/.dotfiles/zsh/path.zsh
-  echo $PATH | tr : "\n"
-}
-
 # Delete local branches that were already merged.
 function git_prune_local_branches() {
   branches=$(git branch --merged master | sed '/*/d' | sed '/master/d')
