@@ -104,7 +104,7 @@ let g:deoplete#enable_at_startup = 1
 " autozimu/LanguageClient-neovim
 " - https://github.com/reasonml-editor/vim-reason-plus
 let g:LanguageClient_serverCommands = {
-  \ 'reason': ['ocaml-language-server', '--stdio'],
+  \ 'reason': ['/Users/nrako/.dotfiles/bin/reason-language-server'],
   \ 'ocaml': ['ocaml-language-server', '--stdio'],
   \ 'ruby': ['solargraph', 'stdio'],
   \ 'typescript': ['javascript-typescript-stdio'],

@@ -52,6 +52,10 @@ brew install sqlite
 brew install puma/puma/puma-dev
 brew install jq
 
+# dev ocaml/reasonml
+brew install gpatch
+brew install opam
+
 # dev ios
 # brew install xcproj
 # brew install xctool
