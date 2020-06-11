@@ -47,6 +47,7 @@ Plug 'janko-m/vim-test' " A Vim wrapper for running tests on different granulari
 Plug 'tpope/vim-dispatch' " dispatch.vim: Asynchronous build and test dispatcher
 Plug 'junegunn/vim-easy-align'
 Plug 'Asheq/close-buffers.vim' " Quickly close (delete) many buffers.
+Plug 'yssl/QFEnter' " QFEnter allows you to open items from Vim's quickfix or location list wherever you wish.
 
 " JavaScript
 Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
