@@ -104,7 +104,7 @@ let g:deoplete#enable_at_startup = 1
 " autozimu/LanguageClient-neovim
 " - https://github.com/reasonml-editor/vim-reason-plus
 let g:LanguageClient_serverCommands = {
-  \ 'reason': ['/Users/nrako/.dotfiles/bin/reason-language-server'],
+  \ 'reason': ['/Users/nrako/.dotfiles/bin/reason-language-server', '--refmt bsrefmt'],
   \ 'ocaml': ['ocaml-language-server', '--stdio'],
   \ 'ruby': ['solargraph', 'stdio'],
   \ 'typescript': ['javascript-typescript-stdio'],
@@ -115,10 +115,18 @@ let g:LanguageClient_autoStart = 1
 
 " https://github.com/sbdchd/neoformat
 let g:neoformat_run_all_formatters = 1
-augroup fmt
-  autocmd!
-  au BufWritePre * try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
-augroup END
+" augroup fmt
+"   autocmd!
+"   au BufWritePre * try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
+" augroup END
+
+let g:neoformat_reason_bsrefmt = {
+  \ 'exe': 'bsrefmt',
+  \ 'stdin': 1,
+  \ 'args': ["--interface=" . (expand('%:e') == "rei" ? "true" : "false")],
+  \ }
+
+let g:neoformat_enabled_reason = ['bsrefmt']
 
 augroup SyntaxSettings
   autocmd!

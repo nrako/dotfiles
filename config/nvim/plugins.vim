@@ -62,6 +62,9 @@ Plug 'leafgarland/typescript-vim', { 'for': ['ts', 'tsx', 'typescript'] } " Flow
 " ReasonML
 Plug 'reasonml-editor/vim-reason-plus'
 
+" ReScript
+Plug 'amiralies/vim-rescript'
+
 " html / templates
 Plug 'digitaltoad/vim-jade', { 'for': ['jade', 'pug'] } " jade support
 Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax
