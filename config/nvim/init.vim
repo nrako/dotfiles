@@ -135,3 +135,6 @@ augroup END
 
 " Make vim-test use dispatch. https://github.com/janko-m/vim-test#strategies
 let test#strategy = "dispatch"
+
+" Disable folding for https://github.com/plasticboy/vim-markdown
+let g:vim_markdown_folding_disabled = 1

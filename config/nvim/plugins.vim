@@ -83,7 +83,7 @@ Plug 'tpope/vim-rake', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 
 " markdown
-Plug 'tpope/vim-markdown', { 'for': 'markdown' } " markdown support
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } " markdown support
 
 " GraphQL
 Plug 'jparise/vim-graphql', { 'for': ['jsx', 'javascript', 'graphql'] } " Flow type
