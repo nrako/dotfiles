@@ -115,10 +115,10 @@ let g:LanguageClient_autoStart = 1
 
 " https://github.com/sbdchd/neoformat
 let g:neoformat_run_all_formatters = 1
-" augroup fmt
-"   autocmd!
-"   au BufWritePre * try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
-" augroup END
+augroup fmt
+  autocmd!
+  au BufWritePre * try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
+augroup END
 
 let g:neoformat_reason_bsrefmt = {
   \ 'exe': 'bsrefmt',
@@ -127,6 +127,8 @@ let g:neoformat_reason_bsrefmt = {
   \ }
 
 let g:neoformat_enabled_reason = ['bsrefmt']
+let g:neoformat_enabled_javascript = ['prettier']
+let g:neoformat_enabled_ruby = []
 
 augroup SyntaxSettings
   autocmd!
