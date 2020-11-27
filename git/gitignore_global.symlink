@@ -31,3 +31,5 @@ Thumbs.db
 # Local Gemfile
 Gemfile.local
 Gemfile.local.lock
+
+.irb_history
