@@ -126,6 +126,7 @@ let g:neoformat_reason_bsrefmt = {
 let g:neoformat_enabled_reason = ['bsrefmt']
 let g:neoformat_enabled_javascript = ['prettier']
 let g:neoformat_enabled_ruby = []
+let g:neoformat_enabled_yaml = []
 
 augroup SyntaxSettings
   autocmd!
