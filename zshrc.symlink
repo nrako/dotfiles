@@ -43,4 +43,7 @@ if type brew &>/dev/null; then
 fi
 
 # fnm
-eval "$(fnm env --multi --shell=zsh --use-on-cd)"
+eval "$(fnm env --shell=zsh --use-on-cd)"
+
+# opam configuration
+test -r /Users/nrako/.opam/opam-init/init.zsh && . /Users/nrako/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
