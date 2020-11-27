@@ -1,0 +1,10 @@
+{
+  "tailwindCSS.htmlLanguages": [
+    "erb",
+    "eruby",
+    "html",
+    "markdown",
+    "slim"
+  ],
+  "tailwindCSS.trace.server": "verbose"
+}

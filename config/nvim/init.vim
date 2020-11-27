@@ -98,9 +98,6 @@ let g:ale_linters = {
   \ 'javascript': ['eslint'],
   \ }
 
-" Shougo/deoplete.nvim
-let g:deoplete#enable_at_startup = 1
-
 " autozimu/LanguageClient-neovim
 " - https://github.com/reasonml-editor/vim-reason-plus
 let g:LanguageClient_serverCommands = {
@@ -140,3 +137,21 @@ let test#strategy = "dispatch"
 
 " Disable folding for https://github.com/plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled = 1
+
+
+""" COC related config
+" Give more space for displaying messages.
+set cmdheight=2
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+
+""" END of COC related config
+
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'

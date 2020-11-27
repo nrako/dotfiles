@@ -16,7 +16,6 @@ Plug 'tpope/vim-sensible', Cond(!has('nvim'))
 " utilities
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " fuzzy file finder and so much more
 Plug 'AndrewRadev/splitjoin.vim' " `gS` to Split a one-line and `gJ` to Join multiline in a single-line statement
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " dark powered asynchronous completion framework for neovim
 Plug 'airblade/vim-gitgutter' " some git gutter
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' } " Language Server protocol (i.e used for reason-vim-plus)
 Plug 'christoomey/vim-tmux-navigator' " ctr-hjkl navigation between vim and tmux splits
@@ -48,6 +47,9 @@ Plug 'tpope/vim-dispatch' " dispatch.vim: Asynchronous build and test dispatcher
 Plug 'junegunn/vim-easy-align'
 Plug 'Asheq/close-buffers.vim' " Quickly close (delete) many buffers.
 Plug 'yssl/QFEnter' " QFEnter allows you to open items from Vim's quickfix or location list wherever you wish.
+
+" Auto completion COC
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " JavaScript
 Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
