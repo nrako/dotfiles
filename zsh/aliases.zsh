@@ -26,7 +26,7 @@ alias gap='git add -p'
 alias gai='git add -i'
 alias gco='git checkout'
 alias g-='git checkout -'
-alias m='git checkout master'
+alias m='git switch $(awk -F "/" '{print $NF}' .git/refs/remotes/origin/HEAD)'
 alias gp='git pull'
 
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
