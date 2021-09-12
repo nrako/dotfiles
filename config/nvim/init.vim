@@ -52,6 +52,8 @@ set shiftround              " round indent to a multiple of 'shiftwidth'
 set scrolloff=2             " keep x lines off the edges of the screen when scrolling vertically
 set sidescrolloff=5         " keep x columns off the edges of the screen when scrolling horizontall
 
+set termguicolors
+
 augroup vimrcautogroup
   autocmd!
 
@@ -156,3 +158,6 @@ set shortmess+=c
 
 let g:python_host_prog = '/usr/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
+
+" https://github.com/norcalli/nvim-colorizer.lua
+lua require'colorizer'.setup()

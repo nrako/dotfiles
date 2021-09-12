@@ -75,7 +75,7 @@ Plug 'slim-template/vim-slim', { 'for': 'slim' } " slim support
 
 " CSS
 Plug 'hostsamurai/CSSMinister.vim', { 'for': ['html', 'css', 'jsx', 'javascript'] }
-Plug 'ap/vim-css-color', { 'for': ['html', 'css', 'jsx', 'javascript'] }
+Plug 'norcalli/nvim-colorizer.lua'
 Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css', 'jsx', 'javascript'] }
 
 " Ruby
