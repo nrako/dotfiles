@@ -47,6 +47,7 @@ Plug 'tpope/vim-dispatch' " dispatch.vim: Asynchronous build and test dispatcher
 Plug 'junegunn/vim-easy-align'
 Plug 'Asheq/close-buffers.vim' " Quickly close (delete) many buffers.
 Plug 'yssl/QFEnter' " QFEnter allows you to open items from Vim's quickfix or location list wherever you wish.
+Plug 'github/copilot.vim' " Github Copilot
 
 " Auto completion COC
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
@@ -60,6 +61,7 @@ Plug 'alampros/vim-styled-jsx', { 'for': ['jsx', 'javascript'] } " Flow type
 
 " Typescript
 Plug 'leafgarland/typescript-vim', { 'for': ['ts', 'tsx', 'typescript'] } " Flow type
+Plug 'peitalin/vim-jsx-typescript', { 'for': ['ts', 'tsx', 'typescript'] }
 
 " ReasonML
 Plug 'reasonml-editor/vim-reason-plus'
@@ -92,5 +94,8 @@ Plug 'jparise/vim-graphql', { 'for': ['jsx', 'javascript', 'graphql'] } " Flow t
 
 " tmux
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
+
+" CPP
+Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 
 call plug#end()
