@@ -84,36 +84,36 @@ brew install qrencode
 # Cask
 brew install cask
 
-brew cask install iterm2
-brew cask install 1password
-brew cask install google-chrome
-brew cask install atom
-brew cask install screenhero
-brew cask install numi
-brew cask install github
-brew cask install vlc
-brew cask install slack
-brew cask install skype
-brew cask install sketch
-brew cask install caskroom/versions/google-chrome-canary
-brew cask install little-snitch
-brew cask install firefox
-brew cask install spotify
-brew cask install visual-studio-code
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
-brew cask install steam
-brew cask install wireshark
-brew cask install the-unarchiver
-brew cask install duet
-brew cask install now
-brew cask install whatsapp
-brew cask install spectacle
-brew cask install discord
-brew cask install tad
-brew cask install oni
-brew cask install docker
-brew cask install postgres
+brew install --cask iterm2
+brew install --cask 1password
+brew install --cask google-chrome
+brew install --cask atom
+brew install --cask screenhero
+brew install --cask numi
+brew install --cask github
+brew install --cask vlc
+brew install --cask slack
+brew install --cask skype
+brew install --cask sketch
+brew install --cask caskroom/versions/google-chrome-canary
+brew install --cask little-snitch
+brew install --cask firefox
+brew install --cask spotify
+brew install --cask visual-studio-code
+brew install --cask virtualbox
+brew install --cask virtualbox-extension-pack
+brew install --cask steam
+brew install --cask wireshark
+brew install --cask the-unarchiver
+brew install --cask duet
+brew install --cask now
+brew install --cask whatsapp
+brew install --cask rectangle
+brew install --cask discord
+brew install --cask tad
+brew install --cask oni
+brew install --cask docker
+brew install --cask postgres
 
 # brew cask install caskroom/versions/firefox-beta
 # brew cask install ukelele
