@@ -34,17 +34,7 @@ alias json="python -mjson.tool"
 
 alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
 
-# HTTP serve the current directory to 0.0.0.0 and safety port 8765
-# Detect python version
-ret=`python -c 'import sys; print("%i" % (sys.hexversion<0x03000000))'`
-if [ $ret -eq 0 ]; then    # Python version is >= 3
-  alias pyhttp='python -m http.server 8765'
-else    # Python version is < 3
-  alias pyhttp='python -m SimpleHTTPServer 8765'
-fi
-
 alias lf='/bin/ls -rt|tail -n1'
-
 
 alias sulast='sudo $(history -p !-1)'
 
