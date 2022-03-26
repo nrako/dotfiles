@@ -127,8 +127,15 @@ let g:neoformat_reason_bsrefmt = {
 
 let g:neoformat_enabled_reason = ['bsrefmt']
 let g:neoformat_enabled_javascript = ['prettier']
+let g:neoformat_enabled_typescript = ['prettier']
 let g:neoformat_enabled_ruby = []
 let g:neoformat_enabled_yaml = []
+let g:neoformat_enabled_html = []
+let g:neoformat_enabled_sass = []
+let g:neoformat_enabled_scss = []
+
+" use the project-local prettier binary
+let g:neoformat_try_node_exe = 1
 
 augroup SyntaxSettings
   autocmd!
