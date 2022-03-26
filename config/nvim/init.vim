@@ -160,6 +160,10 @@ set updatetime=300
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
+
 
 """ END of COC related config
 
