@@ -54,6 +54,15 @@ set sidescrolloff=5         " keep x columns off the edges of the screen when sc
 
 set termguicolors
 
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("nvim-0.5.0") || has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+
 augroup vimrcautogroup
   autocmd!
 
