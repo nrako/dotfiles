@@ -81,3 +81,13 @@ extract () {
 t() {
   tail -f $1 | perl -pe "s/$2/\e[1;31;43m$&\e[0m/g"
 }
+
+m () {  # Switch to main or master branch
+  git branch --list | grep ' master$'
+  if   [[ $? -eq 0 ]]; then git switch master
+  elif [[ $? -ne 0 ]]; then git branch --list | grep ' main$'
+    if [[ $? -eq 0 ]]; then git switch main; fi
+  else  # neither exists
+    git switch -c main
+  fi
+}
