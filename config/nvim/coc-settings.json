@@ -1,4 +1,9 @@
 {
+  "list.source.files.excludePatterns": [
+    "**/node_modules/**",
+    "**/node_modules/**/.*",
+    "**/node_modules/**/.*/**"
+  ],
   "tailwindCSS.htmlLanguages": [
     "erb",
     "eruby",
@@ -6,5 +11,20 @@
     "markdown",
     "slim"
   ],
-  "tailwindCSS.trace.server": "verbose"
+  "tailwindCSS.trace.server": "verbose",
+  "languageserver": {
+    "rescript": {
+      "enable": true,
+      "module": "~/.config/nvim/plugged/vim-rescript/rescript-vscode-1.0.0/extension/server/out/server.js",
+      "args": [
+        "--node-ipc"
+      ],
+      "filetypes": [
+        "rescript"
+      ],
+      "rootPatterns": [
+        "bsconfig.json"
+      ]
+    }
+  }
 }
