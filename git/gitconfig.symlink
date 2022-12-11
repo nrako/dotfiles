@@ -7,9 +7,12 @@
 #  user = nrako
 #  token = ...
 
-[include]
-  # For username / creds / etc
+# For username / creds / etc
+[includeIf "gitdir:~/src/"]
   path = ~/.gitconfig.local
+
+[includeIf "gitdir:~/sfu/"]
+  path = ~/sfu/.gitconfig
 
 [core]
   excludesfile = ~/.gitignore_global
@@ -41,7 +44,6 @@
 
 [commit]
   verbose = true
-  gpgsign = true
 
 [filter "media"]
   required = true
@@ -62,5 +64,3 @@
 [mergetool]
   keepBackup = false
   prompt = false
-[mergetool "nvimdiff"]
-  cmd = nvim https://cooltra.electricfeel.net/barcelona/rentals/684406-d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'

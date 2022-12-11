@@ -20,7 +20,7 @@ brew tap beeftornado/rmtree
 # git
 brew install git
 brew install git-lfs
-brew install gpg
+# brew install gpg
 brew install hub
 brew install diff-so-fancy
 
@@ -53,8 +53,8 @@ brew install puma/puma/puma-dev
 brew install jq
 
 # dev ocaml/reasonml
-brew install gpatch
-brew install opam
+# brew install gpatch
+# brew install opam
 
 # dev ios
 # brew install xcproj
@@ -76,8 +76,8 @@ brew install chruby
 brew install ruby-install
 
 # utilities
-brew install gifify
-brew install mackup
+# brew install gifify
+# brew install mackup
 # `echo 'https://www.nrako.com' | qrencode -o- -tutf8`
 brew install qrencode
 
@@ -87,8 +87,7 @@ brew install cask
 brew install --cask iterm2
 brew install --cask 1password
 brew install --cask google-chrome
-brew install --cask atom
-brew install --cask screenhero
+# brew install --cask atom
 brew install --cask numi
 brew install --cask github
 brew install --cask vlc
@@ -102,11 +101,11 @@ brew install --cask spotify
 brew install --cask visual-studio-code
 brew install --cask virtualbox
 brew install --cask virtualbox-extension-pack
-brew install --cask steam
+# brew install --cask steam
 brew install --cask wireshark
 brew install --cask the-unarchiver
-brew install --cask duet
-brew install --cask now
+# brew install --cask duet
+# brew install --cask now
 brew install --cask whatsapp
 brew install --cask rectangle
 brew install --cask discord
@@ -114,6 +113,7 @@ brew install --cask tad
 brew install --cask oni
 brew install --cask docker
 brew install --cask postgres
+brew install --cask sensiblesidebuttons
 
 # brew cask install caskroom/versions/firefox-beta
 # brew cask install ukelele
@@ -142,5 +142,9 @@ brew tap caskroom/fonts
 # so far the best font available for my eyes, this use the patched nerd version
 # for vim-devicons
 brew cask install font-sourcecodepro-nerd-font
+
+# Graph
+brew tap martido/homebrew-graph
+brew install graphviz
 
 exit 0

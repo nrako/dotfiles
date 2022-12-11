@@ -8,8 +8,6 @@ paths=(
   # Android SDK
   "$HOME/Library/Android/sdk/tools"
   "$HOME/Library/Android/sdk/platform-tools"
-  # Bundler binstubs
-  ./bin
   # fzf
   /usr/local/opt/fzf/bin
   # system stuffs, see path_helper

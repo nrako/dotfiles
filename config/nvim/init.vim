@@ -2,6 +2,7 @@ source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/ui.vim
 source ~/.config/nvim/keys.vim
 source ~/.config/nvim/ctags.vim
+source ~/.config/nvim/filetype.vim
 
 set mouse=a                 " enable using the mouse for vim
 
@@ -145,11 +146,6 @@ let g:neoformat_enabled_scss = []
 
 " use the project-local prettier binary
 let g:neoformat_try_node_exe = 1
-
-augroup SyntaxSettings
-  autocmd!
-  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
-augroup END
 
 " Make vim-test use dispatch. https://github.com/janko-m/vim-test#strategies
 let test#strategy = "dispatch"

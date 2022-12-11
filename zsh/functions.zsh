@@ -12,7 +12,7 @@ bindkey '^Z' fancy-ctrl-z
 
 # Delete local branches that were already merged.
 function git_prune_local_branches() {
-  branches=$(git branch --merged master | sed '/*/d' | sed '/master/d')
+  branches=$(git branch --merged | grep -E -v "(master|main)")
   if [[ $1 = "-f" ]]; then
     echo $branches | xargs git branch -d
   else
@@ -21,22 +21,22 @@ function git_prune_local_branches() {
   fi
 }
 
-# Delete remote merged branches that were already merged.
-function git_prune_remote_branches() {
-  flag=$1
-  branches=`git branch -r --merged origin/master | grep 'origin/' | sed '/master/d'`
-  if [[ $flag = "-f" ]]
-  then
-    branches=`echo $branches | sed "s/origin\//:/g"`
-    git push origin $branches
-    git remote prune origin
-  else
-    for branch in `echo $branches`
-    do
-      echo "Would delete $branch"
-    done
-  fi
-}
+# # Delete remote merged branches that were already merged.
+# function git_prune_remote_branches() {
+#   flag=$1
+#   branches=`git branch -r --merged origin/master | grep 'origin/' | sed '/master/d'`
+#   if [[ $flag = "-f" ]]
+#   then
+#     branches=`echo $branches | sed "s/origin\//:/g"`
+#     git push origin $branches
+#     git remote prune origin
+#   else
+#     for branch in `echo $branches`
+#     do
+#       echo "Would delete $branch"
+#     done
+#   fi
+# }
 
 # cd into current opened folder in Finder
 cf() {

@@ -48,20 +48,21 @@ Plug 'junegunn/vim-easy-align'
 Plug 'Asheq/close-buffers.vim' " Quickly close (delete) many buffers.
 Plug 'yssl/QFEnter' " QFEnter allows you to open items from Vim's quickfix or location list wherever you wish.
 Plug 'github/copilot.vim' " Github Copilot
+Plug 'vim-scripts/SyntaxAttr.vim' " Util to debug syntax highlight with `:call SyntaxAttr()`
 
 " Auto completion COC
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " JavaScript
-Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
+" Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
 Plug 'moll/vim-node', { 'for': 'javascript' } " node support
-Plug 'pangloss/vim-javascript', { 'for': ['jsx', 'javascript'] } " Javascript syntax plugin
-Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['jsx', 'javascript'] } " JSX support
-Plug 'alampros/vim-styled-jsx', { 'for': ['jsx', 'javascript'] } " Flow type
+Plug 'pangloss/vim-javascript' " Javascript syntax plugin
+Plug 'MaxMEllon/vim-jsx-pretty' " JSX support
+" Plug 'alampros/vim-styled-jsx', { 'for': ['jsx', 'javascript'] } " Flow type
 
 " Typescript
-Plug 'leafgarland/typescript-vim', { 'for': ['ts', 'tsx', 'typescript'] } " Flow type
-Plug 'peitalin/vim-jsx-typescript', { 'for': ['ts', 'tsx', 'typescript'] }
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " ReasonML
 Plug 'reasonml-editor/vim-reason-plus'
@@ -90,7 +91,7 @@ Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } " markdown support
 
 " GraphQL
-Plug 'jparise/vim-graphql', { 'for': ['jsx', 'javascript', 'graphql'] } " Flow type
+Plug 'jparise/vim-graphql', { 'for': ['jsx', 'javascript', 'typescript', 'typescriptreact', 'graphql'] } " Flow type
 
 " tmux
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }

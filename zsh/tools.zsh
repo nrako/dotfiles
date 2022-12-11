@@ -12,7 +12,7 @@ save_function()
 save_function chruby orig_chruby
 chruby() {
   orig_chruby $*
-  PATH=./bin:$PATH
+  # PATH=./bin:$PATH
 }
 
 chruby ruby

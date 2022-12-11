@@ -19,6 +19,7 @@ set fillchars+=vert:│
 
 " highlights customization
 function! s:base16_customize() abort
+  " Base16hi(group, guifg, guibg, ctermfg, ctermbg, ...)
 
   " minimal gutter
   call Base16hi("FoldColumn", g:base16_gui03, g:base16_gui01, g:base16_cterm03, "None", "", "")
@@ -45,6 +46,24 @@ function! s:base16_customize() abort
   call Base16hi("SpellLocal",   "", "", "", g:base16_cterm00, "underline", g:base16_gui0C)
   call Base16hi("SpellCap",     "", "", "", g:base16_cterm00, "underline", g:base16_gui0D)
   call Base16hi("SpellRare",    "", "", "", g:base16_cterm00, "underline", g:base16_gui0E)
+
+  " HerringtonDarkholme/yats.vim
+  call Base16hi("tsxString", g:base16_gui0B, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("tsxRegion", g:base16_gui0F, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("tsxTagName", g:base16_gui08, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("tsxCloseTagName", g:base16_gui08, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("tsxComponentName", g:base16_gui0D, "", g:base16_cterm0D, "None", "bold", "")
+  call Base16hi("tsxCloseComponentName", g:base16_gui0D, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("typescriptVariable", g:base16_gui0A, "", g:base16_cterm0A, "None", "", "")
+  call Base16hi("typescriptVariableDeclaration", g:base16_gui07, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("typescriptDestructureVariable", g:base16_gui07, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("tsxAttrib", g:base16_gui06, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("typescriptObjectLabel", g:base16_gui06, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("typescriptTypeReference", g:base16_gui0C, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("typescriptTypeBracket", g:base16_gui0A, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("typescriptObjectLiteral", g:base16_gui09, "", g:base16_cterm0D, "None", "", "")
+  call Base16hi("typescriptExceptions", g:base16_gui08, "", g:base16_cterm0D, "None", "", "")
+
 endfunction
 
 call s:base16_customize()
@@ -78,4 +97,4 @@ let g:airline_mode_map = {
 " only show line number and column
 let g:airline_section_z = '%l:%v'
 " only show the branch in the VCS section
-let g:airline_section_b = ' %{fugitive#head(8)}'
+let g:airline_section_b = ' %{FugitiveHead(8)}'
