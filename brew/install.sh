@@ -9,6 +9,7 @@ echo -e "\n\nInstalling homebrew packages..."
 echo "=============================="
 
 # must
+brew install asdf
 brew install openssl
 brew install ag
 brew install ack
@@ -72,8 +73,6 @@ brew install redis
 brew install phantomjs
 brew install memcached
 brew install rabbitmq
-brew install chruby
-brew install ruby-install
 
 # utilities
 # brew install gifify

@@ -42,11 +42,5 @@ if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
 
-# fnm
-eval "$(fnm env --shell=zsh --use-on-cd)"
-
-# opam configuration
-test -r /Users/nrako/.opam/opam-init/init.zsh && . /Users/nrako/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform

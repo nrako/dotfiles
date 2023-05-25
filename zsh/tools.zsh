@@ -1,18 +1,10 @@
-# Load chruby and enable auto switching when entering a directory containing
-# a .ruby-version file.
-source '/usr/local/share/chruby/chruby.sh'
-source '/usr/local/share/chruby/auto.sh'
+# files used to set and load toolings
 
-save_function()
-{
-  local ORIG_FUNC="$(declare -f $1)"
-  local NEWNAME_FUNC="$2${ORIG_FUNC#$1}"
-  eval "$NEWNAME_FUNC"
-}
-save_function chruby orig_chruby
-chruby() {
-  orig_chruby $*
-  # PATH=./bin:$PATH
-}
+# opam configuration
+test -r /Users/nrako/.opam/opam-init/init.zsh && . /Users/nrako/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
-chruby ruby
+# asdf
+. /usr/local/opt/asdf/libexec/asdf.sh
+
+# fnm
+eval "$(fnm env --shell=zsh --use-on-cd)"

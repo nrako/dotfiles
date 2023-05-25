@@ -16,8 +16,8 @@ paths=(
   /bin
   /usr/sbin
   /opt/X11/bin
-  # Postgres.app
-  /Applications/Postgres.app/Contents/Versions/12/bin
+  # Postgres.app (should be taken care of by `asdf` `postgres-app` plugin
+  # /Applications/Postgres.app/Contents/Versions/14/bin
   # /Applications/Postgres.app/Contents/Versions/latest/bin
   # personal scripts
   "$HOME/.bin"
