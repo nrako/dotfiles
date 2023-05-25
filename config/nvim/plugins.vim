@@ -16,26 +16,15 @@ Plug 'tpope/vim-sensible', Cond(!has('nvim'))
 " utilities
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " fuzzy file finder and so much more
 Plug 'AndrewRadev/splitjoin.vim' " `gS` to Split a one-line and `gJ` to Join multiline in a single-line statement
-Plug 'airblade/vim-gitgutter' " some git gutter
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' } " Language Server protocol (i.e used for reason-vim-plus)
-Plug 'christoomey/vim-tmux-navigator' " ctr-hjkl navigation between vim and tmux splits
 Plug 'editorconfig/editorconfig-vim' " .editorconfig support<Paste>
 Plug 'haya14busa/vim-operator-flashy' " flash yanked text
-Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " distraction-free writing
-Plug 'junegunn/limelight.vim', { 'on': 'Limelight' } " focus tool. Good for presentating with vim
 Plug 'kana/vim-operator-user' " required for the plugin bellow (vim-operator-flashy)
-Plug 'majutsushi/tagbar' " displays tags in a window, ordered by scope
-Plug 'mbbill/undotree' " visualize vim undo tree
 Plug 'mileszs/ack.vim' " search inside files using ack. Same as command line ack utility, but use :Ack
 Plug 'milkypostman/vim-togglelist' " toggle location list or quicfix list
-Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' " file drawer
 Plug 'tpope/vim-commentary' " commentary.vim
-Plug 'tpope/vim-fugitive' " amazing git wrapper for vim
-Plug 'tpope/vim-rhubarb' " Github plugin for vim-fugitive
 Plug 'tpope/vim-repeat' " repeat.vim: enable repeating supported plugin maps with '.'
 Plug 'tpope/vim-surround' " parentheses, brackets, quotes, XML tags, and more   (i.e cs'<h1>)
-Plug 'vim-airline/vim-airline' " fancy statusline
-Plug 'vim-airline/vim-airline-themes' " themes for vim-airline
 Plug 'w0rp/ale' " Asynchronous lint engine!
 Plug 'wellle/targets.vim' " Vim plugin that provides additional text objects
 Plug 'sbdchd/neoformat' " A (Neo)vim plugin for formatting code
@@ -47,11 +36,29 @@ Plug 'tpope/vim-dispatch' " dispatch.vim: Asynchronous build and test dispatcher
 Plug 'junegunn/vim-easy-align'
 Plug 'Asheq/close-buffers.vim' " Quickly close (delete) many buffers.
 Plug 'yssl/QFEnter' " QFEnter allows you to open items from Vim's quickfix or location list wherever you wish.
-Plug 'github/copilot.vim' " Github Copilot
 Plug 'vim-scripts/SyntaxAttr.vim' " Util to debug syntax highlight with `:call SyntaxAttr()`
 
+" utilities for neovim only (not compatible with VSCode)
+Plug 'airblade/vim-gitgutter', Cond(!exists('g:vscode')) " some git gutter
+Plug 'christoomey/vim-tmux-navigator', Cond(!exists('g:vscode')) " ctr-hjkl navigation between vim and tmux splits
+Plug 'junegunn/goyo.vim', Cond(!exists('g:vscode'), { 'on': 'Goyo' }) " distraction-free writing
+Plug 'junegunn/limelight.vim', Cond(!exists('g:vscode'), { 'on': 'Limelight' }) " focus tool. Good for presentating with vim
+Plug 'majutsushi/tagbar', Cond(!exists('g:vscode')) " displays tags in a window, ordered by scope
+Plug 'mbbill/undotree', Cond(!exists('g:vscode')) " visualize vim undo tree
+Plug 'tpope/vim-fugitive', Cond(!exists('g:vscode')) " amazing git wrapper for vim
+Plug 'tpope/vim-rhubarb', Cond(!exists('g:vscode')) " Github plugin for vim-fugitive
+Plug 'vim-airline/vim-airline', Cond(!exists('g:vscode')) " fancy statusline
+Plug 'vim-airline/vim-airline-themes', Cond(!exists('g:vscode')) " themes for vim-airline
+Plug 'github/copilot.vim', Cond(!exists('g:vscode')) " Github Copilot
+
+ " file drawer
+Plug 'scrooloose/nerdtree', Cond(!exists('g:vscode'), { 'on': ['NERDTreeToggle', 'NERDTreeFind'] })
+Plug 'Xuyuanp/nerdtree-git-plugin', Cond(!exists('g:vscode'))
+Plug 'ryanoasis/vim-devicons', Cond(!exists('g:vscode'))
+
+
 " Auto completion COC
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'neoclide/coc.nvim', Cond(!exists('g:vscode'), { 'branch': 'release' })
 
 " JavaScript
 " Plug 'fleischie/vim-styled-components', { 'for': ['jsx', 'javascript'] } " styled-components
@@ -94,9 +101,12 @@ Plug 'plasticboy/vim-markdown', { 'for': 'markdown' } " markdown support
 Plug 'jparise/vim-graphql', { 'for': ['jsx', 'javascript', 'typescript', 'typescriptreact', 'graphql'] } " Flow type
 
 " tmux
-Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
+Plug 'tmux-plugins/vim-tmux', Cond(!exists('g:vscode'), { 'for': 'tmux' })
 
 " CPP
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
+
+" Random
+Plug 'eandrju/cellular-automaton.nvim' " <Leader>fml      (ZZ to stop)
 
 call plug#end()
