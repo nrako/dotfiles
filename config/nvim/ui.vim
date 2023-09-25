@@ -98,3 +98,5 @@ let g:airline_mode_map = {
 let g:airline_section_z = '%l:%v'
 " only show the branch in the VCS section
 let g:airline_section_b = ' %{FugitiveHead(8)}'
+" show Codenium status in statusline
+let g:airline_section_y = '{…}%3{codeium#GetStatusString()}'

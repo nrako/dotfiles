@@ -29,14 +29,9 @@ Plug 'w0rp/ale' " Asynchronous lint engine!
 Plug 'wellle/targets.vim' " Vim plugin that provides additional text objects
 Plug 'sbdchd/neoformat' " A (Neo)vim plugin for formatting code
 Plug 'raghur/vim-ghost', {'do': ':GhostInstall'} " Use your editor write in the browser
-Plug 'tkhren/vim-fake' " Vim plugin to generate random dummy/filler text
-Plug 'ldong/vim_loremipsum' " Vim plugin that generate Lorem Ipsums
-Plug 'janko-m/vim-test' " A Vim wrapper for running tests on different granularities.
-Plug 'tpope/vim-dispatch' " dispatch.vim: Asynchronous build and test dispatcher
-Plug 'junegunn/vim-easy-align'
-Plug 'Asheq/close-buffers.vim' " Quickly close (delete) many buffers.
-Plug 'yssl/QFEnter' " QFEnter allows you to open items from Vim's quickfix or location list wherever you wish.
-Plug 'vim-scripts/SyntaxAttr.vim' " Util to debug syntax highlight with `:call SyntaxAttr()`
+Plug 'tkhren/vim-fake' " Vim plugin to generate random dummy/filler tex
+Plug 'nicwest/vim-camelsnek' " Vim plugin to change cases (e.g form snake_case to pascalCase)
+Plug 'terryma/vim-expand-region' " Vim plugin that allows you to visually select increasingly larger regions of text using the same key combination
 
 " utilities for neovim only (not compatible with VSCode)
 Plug 'airblade/vim-gitgutter', Cond(!exists('g:vscode')) " some git gutter
@@ -49,7 +44,8 @@ Plug 'tpope/vim-fugitive', Cond(!exists('g:vscode')) " amazing git wrapper for v
 Plug 'tpope/vim-rhubarb', Cond(!exists('g:vscode')) " Github plugin for vim-fugitive
 Plug 'vim-airline/vim-airline', Cond(!exists('g:vscode')) " fancy statusline
 Plug 'vim-airline/vim-airline-themes', Cond(!exists('g:vscode')) " themes for vim-airline
-Plug 'github/copilot.vim', Cond(!exists('g:vscode')) " Github Copilot
+" Plug 'github/copilot.vim', Cond(!exists('g:vscode')) " Github Copilot
+Plug 'Exafunction/codeium.vim', Cond(!exists('g:vscode')) " Codenium
 
  " file drawer
 Plug 'scrooloose/nerdtree', Cond(!exists('g:vscode'), { 'on': ['NERDTreeToggle', 'NERDTreeFind'] })
@@ -107,6 +103,7 @@ Plug 'tmux-plugins/vim-tmux', Cond(!exists('g:vscode'), { 'for': 'tmux' })
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 
 " Random
+Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'eandrju/cellular-automaton.nvim' " <Leader>fml      (ZZ to stop)
 
 call plug#end()

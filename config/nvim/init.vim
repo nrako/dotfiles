@@ -14,9 +14,14 @@ set hidden                  " hide buffers instead of closing them this
                             "    to background without being written; and
                             "    that marks and undo history are preserved
 
-" ya all speak English right!
-set spell
-set spelllang=en_us
+if exists('g:vscode')
+  " let vscode plugin do the spell checks
+  set nospell
+else
+  " ya all speak English right!
+  set spell
+  set spelllang=en_us
+endif
 
 " suppress all bells
 set novisualbell
@@ -123,11 +128,11 @@ let g:LanguageClient_serverCommands = {
 let g:LanguageClient_autoStart = 1
 
 " https://github.com/sbdchd/neoformat
-let g:neoformat_run_all_formatters = 1
-augroup fmt
-  autocmd!
-  au BufWritePre * try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
-augroup END
+let g:neoformat_run_all_formatters = 0
+" augroup fmt
+"   autocmd!
+"   au BufWritePre * try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
+" augroup END
 
 let g:neoformat_reason_bsrefmt = {
   \ 'exe': 'bsrefmt',
@@ -177,3 +182,9 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 
 " https://github.com/norcalli/nvim-colorizer.lua
 lua require'colorizer'.setup()
+
+" Disable Perl support
+let g:loaded_perl_provider = 0
+
+" To use fzf in Vim
+set rtp+=/usr/local/opt/fzf

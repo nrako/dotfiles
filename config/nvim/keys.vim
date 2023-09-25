@@ -122,6 +122,8 @@ noremap <C-s> <ESC>:w<CR>
 " save with ctrl-s while in insert mode
 inoremap <C-s> <ESC>:w<CR>li
 
+" map v <Plug>(expand_region_expand)
+" map J <Plug>(expand_region_shrink)
 
 
 if exists('g:vscode')
