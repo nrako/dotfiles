@@ -1,5 +1,5 @@
 .sensible
 
-config/nvim/plugged
-config/nvim/.netrwhist
-config/nvim/undodir
+config_backup/nvim/plugged
+config_backup/nvim/.netrwhist
+config_backup/nvim/undodir

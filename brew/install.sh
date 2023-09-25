@@ -15,7 +15,6 @@ brew install ag
 brew install ack
 brew install wget
 brew install curl
-brew install neovim/neovim/neovim
 brew tap beeftornado/rmtree
 
 # git
@@ -40,11 +39,15 @@ brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
 brew install zsh-completions
 
-# vim
+# vim neovim
 brew install neovim/neovim/neovim
 brew install ctags
 brew install python
 brew install python3
+brew install ripgrep
+brew install gnu-sed
+brew install lazygit
+brew install fd
 
 # dev
 brew install Schniz/tap/fnm
