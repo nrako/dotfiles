@@ -113,6 +113,7 @@ brew install --cask oni
 brew install --cask docker
 brew install --cask postgres
 brew install --cask sensiblesidebuttons
+brew install --cask raycast
 
 # brew cask install caskroom/versions/firefox-beta
 # brew cask install ukelele
