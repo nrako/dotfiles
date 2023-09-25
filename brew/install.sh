@@ -1,8 +1,8 @@
 #!/bin/sh
 
 if test ! $(which brew); then
-    echo "Installing homebrew"
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	echo "Installing homebrew"
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 echo -e "\n\nInstalling homebrew packages..."
@@ -16,6 +16,7 @@ brew install ack
 brew install wget
 brew install curl
 brew tap beeftornado/rmtree
+brew install joshuto
 
 # git
 brew install git
@@ -86,16 +87,13 @@ brew install qrencode
 # Cask
 brew install cask
 
-brew install --cask iterm2
 brew install --cask 1password
 brew install --cask google-chrome
-# brew install --cask atom
 brew install --cask numi
 brew install --cask github
 brew install --cask vlc
 brew install --cask slack
 brew install --cask skype
-brew install --cask sketch
 brew install --cask caskroom/versions/google-chrome-canary
 brew install --cask little-snitch
 brew install --cask firefox
@@ -103,31 +101,16 @@ brew install --cask spotify
 brew install --cask visual-studio-code
 brew install --cask virtualbox
 brew install --cask virtualbox-extension-pack
-# brew install --cask steam
 brew install --cask wireshark
 brew install --cask the-unarchiver
-# brew install --cask duet
-# brew install --cask now
 brew install --cask whatsapp
 brew install --cask rectangle
 brew install --cask discord
 brew install --cask tad
-brew install --cask oni
 brew install --cask docker
 brew install --cask postgres
 brew install --cask sensiblesidebuttons
 brew install --cask raycast
-
-# brew cask install caskroom/versions/firefox-beta
-# brew cask install ukelele
-# brew cask install plug
-# brew cask install bettertouchtool
-# brew cask install appcleaner
-# brew cask install dropbox
-# brew cask install flinto
-# brew cask install android-studio
-# brew cask install genymotion
-
 
 # mas Mac App Store command line interface
 # brew install mas
