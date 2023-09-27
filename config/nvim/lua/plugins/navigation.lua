@@ -1,14 +1,19 @@
 return {
   {
-    "numToStr/Navigator.nvim",
+    "mrjones2014/smart-splits.nvim",
+    lazy = false,
     opts = {
-      disable_on_zoom = true,
+      at_edge = "stop",
     },
-    keys = {
-      { "<C-h>", "<cmd>NavigatorLeft<cr>", desc = "Go left" },
-      { "<C-j>", "<cmd>NavigatorDown<cr>", desc = "Go Down" },
-      { "<C-k>", "<cmd>NavigatorUp<cr>", desc = "Go Up" },
-      { "<C-l>", "<cmd>NavigatorRight<cr>", desc = "Go Right" },
-    },
+    -- NOTE:: the keyamps must be "overriden" in the /nvim/lua/config/keymaps.lua, defining the keymaps here doesn't work
+    -- keys = {}
+  },
+  {
+    "s1n7ax/nvim-window-picker",
+    name = "window-picker",
+    event = "VeryLazy",
+    config = function()
+      require("window-picker").setup()
+    end,
   },
 }

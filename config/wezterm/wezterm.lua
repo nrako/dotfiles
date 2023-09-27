@@ -55,5 +55,9 @@ config.bypass_mouse_reporting_modifiers = "ALT"
 --- See: https://wezfurlong.org/wezterm/config/lua/config/term.html
 config.term = "wezterm"
 
+-- use same LEADER as in Tmux
+config.leader = { key = " ", mods = "CTRL", timeout_milliseconds = 1000 }
+config.keys = require("keys")
+
 -- and finally, return the configuration to wezterm
 return config
