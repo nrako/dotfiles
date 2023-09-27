@@ -16,7 +16,7 @@ end
 config.color_scheme = "AdventureTime"
 
 -- Config related to text font and text rendering
-config.font = wezterm.font("SauceCodePro Nerd Font", { weight = 510 })
+config.font = wezterm.font("SauceCodePro Nerd Font", { weight = 400 })
 -- config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 14
 config.line_height = 1.1
@@ -28,6 +28,13 @@ config.hide_tab_bar_if_only_one_tab = true
 -- Config for new window default size
 config.initial_cols = 90
 config.initial_rows = 25
+-- Config for window paddings
+config.window_padding = {
+	top = "0.3cell",
+	right = "0.5cell",
+	bottom = "0.3cell",
+	left = "0.5cell",
+}
 
 -- Config for window paddings
 config.window_padding = {
