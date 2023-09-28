@@ -1,6 +1,8 @@
 -- Pull in the wezterm API
 local wezterm = require("wezterm")
 
+require("statusbar")
+
 -- This table will hold the configuration.
 local config = {}
 
@@ -13,7 +15,7 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = "AdventureTime"
+config.color_scheme = "Dracula"
 
 -- Config related to text font and text rendering
 -- config.font = wezterm.font("SauceCodePro Nerd Font", { weight = 400 })
@@ -28,24 +30,37 @@ config.underline_position = -3
 
 -- Config for minimal window decoration/appearance
 config.window_decorations = "RESIZE"
-config.hide_tab_bar_if_only_one_tab = true
+config.use_fancy_tab_bar = false
+
+config.colors = {
+	tab_bar = {
+		background = "#000000",
+		active_tab = {
+			bg_color = "#2b2042",
+			fg_color = "#c0c0c0",
+			intensity = "Bold",
+		},
+		inactive_tab = {
+			bg_color = "#000000",
+			fg_color = "#808080",
+		},
+		new_tab = {
+			bg_color = "#000000",
+			fg_color = "#808080",
+		},
+	},
+}
+
 -- Config for new window default size
 config.initial_cols = 90
 config.initial_rows = 25
--- Config for window paddings
-config.window_padding = {
-	top = "0.3cell",
-	right = "0.5cell",
-	bottom = "0.3cell",
-	left = "0.5cell",
-}
 
 -- Config for window paddings
 config.window_padding = {
-	top = "0.3cell",
-	right = "0.5cell",
-	bottom = "0.3cell",
-	left = "0.5cell",
+	top = "0.2cell",
+	right = "0.8cell",
+	bottom = "0.2cell",
+	left = "0.8cell",
 }
 -- Config for inactie pane appearance
 config.inactive_pane_hsb = {

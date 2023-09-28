@@ -76,6 +76,20 @@ return {
 	{ key = "n", mods = "LEADER", action = act.ActivateTabRelative(1) },
 	-- tmux style keybinds to start copy mode
 	{ key = "Escape", mods = "LEADER", action = wezterm.action.ActivateCopyMode },
+	-- tmux style to use workspaces (aka sessions)
+	{ key = "s", mods = "LEADER", action = act.ShowLauncherArgs({ flags = "FUZZY|WORKSPACES" }) },
+	{
+		key = "$",
+		mods = "LEADER",
+		action = act.PromptInputLine({
+			description = "Enter new name for current workspace",
+			action = wezterm.action_callback(function(window, _, line)
+				if line then
+					wezterm.mux.rename_workspace(wezterm.mux.get_active_workspace(), line)
+				end
+			end),
+		}),
+	},
 	-- tmux style keybinds to rename the current tab
 	{
 		key = ",",
