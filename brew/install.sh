@@ -124,13 +124,13 @@ brew install --cask raycast
 
 # Fonts
 brew tap caskroom/fonts
-
-# so far the best font available for my eyes, this use the patched nerd version
-# for vim-devicons
-brew cask install font-sourcecodepro-nerd-font
+brew install --cask font-source-code-pro
+brew install --cask font-symbols-only-nerd-font
 
 # Graph
 brew tap martido/homebrew-graph
 brew install graphviz
+
+# Fonts
 
 exit 0

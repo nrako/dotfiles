@@ -16,7 +16,11 @@ end
 config.color_scheme = "AdventureTime"
 
 -- Config related to text font and text rendering
-config.font = wezterm.font("SauceCodePro Nerd Font", { weight = 400 })
+-- config.font = wezterm.font("SauceCodePro Nerd Font", { weight = 400 })
+config.font = wezterm.font_with_fallback({
+	{ family = "Source Code Pro", weight = 400 },
+	{ family = "Symbols Nerd Font", scale = 0.85 },
+})
 -- config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 14
 config.line_height = 1.1
