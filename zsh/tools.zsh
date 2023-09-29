@@ -5,6 +5,3 @@ test -r /Users/nrako/.opam/opam-init/init.zsh && . /Users/nrako/.opam/opam-init/
 
 # asdf
 . /usr/local/opt/asdf/libexec/asdf.sh
-
-# fnm
-eval "$(fnm env --shell=zsh --use-on-cd)"

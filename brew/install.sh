@@ -51,7 +51,6 @@ brew install lazygit
 brew install fd
 
 # dev
-brew install Schniz/tap/fnm
 brew install go
 brew install sqlite
 brew install puma/puma/puma-dev
