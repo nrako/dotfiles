@@ -32,29 +32,31 @@ end
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-local bufopts = { noremap = true, silent = true }
-map("n", "<A-,>", "<Cmd>BufferPrevious<CR>", bufopts)
-map("n", "<A-.>", "<Cmd>BufferNext<CR>", bufopts)
---- buffers
-if Util.has("bufferline.nvim") then
-  map("n", "<M-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })
-  map("n", "<M-l>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next buffer" })
-else
-  map("n", "<M-h>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
-  map("n", "<M-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
-end
+if not vim.g.vscode then
+  local bufopts = { noremap = true, silent = true }
+  map("n", "<A-,>", "<Cmd>BufferPrevious<CR>", bufopts)
+  map("n", "<A-.>", "<Cmd>BufferNext<CR>", bufopts)
+  --- buffers
+  if Util.has("bufferline.nvim") then
+    map("n", "<M-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })
+    map("n", "<M-l>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next buffer" })
+  else
+    map("n", "<M-h>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
+    map("n", "<M-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+  end
 
---- KEYMAPS for smart-splits
----
--- unfortunately those keymaps for reason unclear to me can't be set through the lazyvium plugin import interface
---
--- change focus window
-map("n", "<C-h>", require("smart-splits").move_cursor_left, { desc = "Move to left window" })
-map("n", "<C-j>", require("smart-splits").move_cursor_down, { desc = "Move to down window" })
-map("n", "<C-l>", require("smart-splits").move_cursor_right, { desc = "Move to right window!!!" })
-map("n", "<C-k>", require("smart-splits").move_cursor_up, { desc = "Move to up window" })
--- resize window
-map("n", "<M-Left>", require("smart-splits").resize_left, { desc = "smart resize left" })
-map("n", "<M-Down>", require("smart-splits").resize_down, { desc = "smart resize down" })
-map("n", "<M-Up>", require("smart-splits").resize_up, { desc = "smart resize up" })
-map("n", "<M-Right>", require("smart-splits").resize_right, { desc = "smart resize right" })
+  --- KEYMAPS for smart-splits
+  ---
+  -- unfortunately those keymaps for reason unclear to me can't be set through the lazyvium plugin import interface
+  --
+  -- change focus window
+  map("n", "<C-h>", require("smart-splits").move_cursor_left, { desc = "Move to left window" })
+  map("n", "<C-j>", require("smart-splits").move_cursor_down, { desc = "Move to down window" })
+  map("n", "<C-l>", require("smart-splits").move_cursor_right, { desc = "Move to right window!!!" })
+  map("n", "<C-k>", require("smart-splits").move_cursor_up, { desc = "Move to up window" })
+  -- resize window
+  map("n", "<M-Left>", require("smart-splits").resize_left, { desc = "smart resize left" })
+  map("n", "<M-Down>", require("smart-splits").resize_down, { desc = "smart resize down" })
+  map("n", "<M-Up>", require("smart-splits").resize_up, { desc = "smart resize up" })
+  map("n", "<M-Right>", require("smart-splits").resize_right, { desc = "smart resize right" })
+end
