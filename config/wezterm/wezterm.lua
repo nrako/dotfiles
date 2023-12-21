@@ -14,6 +14,9 @@ end
 
 -- This is where you actually apply your config choices
 
+config.window_background_opacity = 0.95
+config.macos_window_background_blur = 15
+
 -- For example, changing the color scheme:
 config.color_scheme = "Dracula"
 
@@ -57,9 +60,9 @@ config.initial_rows = 25
 
 -- Config for window paddings
 config.window_padding = {
-	top = "0.2cell",
+	top = "0.8cell",
 	right = "0.8cell",
-	bottom = "0.2cell",
+	bottom = "0.8cell",
 	left = "0.8cell",
 }
 -- Config for inactie pane appearance
