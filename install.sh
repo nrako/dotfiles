@@ -23,8 +23,8 @@ tic ./resources/tmux-256color-italic.terminfo
 tic ./resources/xterm-256color-italic.ti
 tic ./resources/xterm-256color-italic.terminfo
 
-echo "install custom keyboard layout"
-cp ./keyboards/swiss-dev.keylayout ~/Library/Keyboard\ Layouts/
+# echo "install custom keyboard layout"
+# cp ./keyboards/swiss-dev.keylayout ~/Library/Keyboard\ Layouts/
 
 echo "configuring zsh as default shell"
 chsh -s $(which zsh)
