@@ -74,7 +74,7 @@ defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Set the timezone; see `systemsetup -listtimezones` for other values
-systemsetup -settimezone "Europe/Zurich" > /dev/null
+systemsetup -settimezone "Europe/Zurich" >/dev/null
 
 # Set global keyboards shortcuts for vim style navigation
 defaults write -g NSUserKeyEquivalents '{
@@ -88,9 +88,9 @@ defaults write -g NSUserKeyEquivalents '{
   "Show Next Tab" = "@l";
   "Show Previous Tab" = "@h";
 }'
-defaults write -globalDomain NSUserKeyEquivalents  -dict-add "Open Location..." "@$l";
-defaults write -globalDomain NSUserKeyEquivalents  -dict-add "Show Next Tab" "@l";
-defaults write -globalDomain NSUserKeyEquivalents  -dict-add "Show Previous Tab" "@h";
+defaults write -globalDomain NSUserKeyEquivalents -dict-add "Open Location..." "@$l"
+defaults write -globalDomain NSUserKeyEquivalents -dict-add "Show Next Tab" "@l"
+defaults write -globalDomain NSUserKeyEquivalents -dict-add "Show Previous Tab" "@h"
 
 ###############################################################################
 # Photos                                                                      #
@@ -156,6 +156,6 @@ defaults write com.apple.notificationcenterui NSRequiresAquaSystemAppearance -bo
 
 echo "Kill affected applications"
 for app in Safari Finder Dock SystemUIServer Photos Transmission Twitter; do
-  killall "$app" >/dev/null 2>&1;
+	killall "$app" >/dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
