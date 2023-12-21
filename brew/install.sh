@@ -95,8 +95,8 @@ brew install --cask little-snitch
 brew install --cask firefox
 brew install --cask spotify
 brew install --cask visual-studio-code
-brew install --cask virtualbox
-brew install --cask virtualbox-extension-pack
+# brew install --cask virtualbox
+# brew install --cask virtualbox-extension-pack
 brew install --cask wireshark
 brew install --cask the-unarchiver
 brew install --cask whatsapp
