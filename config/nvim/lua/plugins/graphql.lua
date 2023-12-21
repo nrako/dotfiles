@@ -1,28 +1,27 @@
 return {
-  -- {
-  --   "neovim/nvim-lspconfig",
-  --   opts = {
-  --     servers = {
-  --       ruby_ls = {},
-  --     },
-  --   },
-  -- },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        graphql = {},
+      },
+    },
+  },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
-        "ruby",
+        "graphql",
       })
       return opts
     end,
   },
-  { "slim-template/vim-slim", ft = "slim" },
   {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "solargraph",
+        "graphql-language-service-cli",
       },
     },
-  },
+  }
 }

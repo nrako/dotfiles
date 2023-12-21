@@ -47,6 +47,14 @@ function Plugin.update_state()
   Config.to_clean = {}
 end
 
+-- else
+--   noremap(
+--     "n",
+--     "<leader>cr <Cmd>call VSCodeNotifyVisual('editor.action.rename', 1)<CR>",
+--     { silent = true, desc = "Rename Symbol" }
+--   )
+-- noremap <silent> <leader>gy <Cmd>call VSCodeNotifyVisual('editor.action.goToTypeDefinition', 1)<CR>
+
 -- Add some vscode specific keymaps
 vim.api.nvim_create_autocmd("User", {
   pattern = "LazyVimKeymaps",
@@ -54,8 +62,37 @@ vim.api.nvim_create_autocmd("User", {
     vim.keymap.set("n", "<leader><space>", "<cmd>Find<cr>")
     vim.keymap.set("n", "<leader>/", [[<cmd>call VSCodeNotify('workbench.action.findInFiles')<cr>]])
     vim.keymap.set("n", "<leader>ss", [[<cmd>call VSCodeNotify('workbench.action.gotoSymbol')<cr>]])
+    vim.keymap.set("n", "<leader>cr", [[<cmd>call VSCodeNotify('editor.action.rename')<cr>]], { noremap = true })
+    vim.keymap.set("n", "gr", [[<cmd>call VSCodeNotify('editor.action.goToReferences')<cr>]], { noremap = true })
+    vim.keymap.set("n", "gd", [[<cmd>call VSCodeNotify('editor.action.goToTypeDefinition')<cr>]], { noremap = true })
   end,
 })
+
+-- {
+--     "key": "space c r",
+--     "command": "editor.action.rename",
+--     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly && neovim.mode == 'normal'"
+-- },
+-- {
+--     "key": "g y",
+--     "command": "editor.action.goToTypeDefinition",
+--     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly && neovim.mode == 'normal'"
+-- },
+-- {
+--     "key": "g d",
+--     "command": "editor.action.revealDefinition",
+--     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly && neovim.mode == 'normal'"
+-- },
+-- {
+--     "key": "g r",
+--     "command": "editor.action.goToReferences",
+--     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor && neovim.mode == 'normal'"
+-- },
+-- {
+--     "key": "g I",
+--     "command": "editor.action.goToImplementation",
+--     "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor && nevoim.mode === 'normal'"
+-- },
 
 return {
   {

@@ -1,16 +1,16 @@
 return {
   {
     "Exafunction/codeium.nvim",
-    event = "VeryLazy",
+    event = "BufEnter",
 
     -- enabled = os.getenv("USE_AI_TOOLS") == "true",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "hrsh7th/nvim-cmp",
-    },
-    config = function()
-      require("codeium").setup({})
-    end,
+    -- dependencies = {
+    --   "nvim-lua/plenary.nvim",
+    --   "hrsh7th/nvim-cmp",
+    -- },
+    -- config = function()
+    --   require("codeium").setup({})
+    -- end,
   },
   {
     "hrsh7th/nvim-cmp",
