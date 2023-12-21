@@ -108,7 +108,7 @@ brew install --cask discord
 brew install --cask tad
 brew install --cask docker
 brew install --cask postgres
-brew install --cask sensiblesidebuttons
+brew install --cask sanesidebuttons
 brew install --cask raycast
 
 # mas Mac App Store command line interface
