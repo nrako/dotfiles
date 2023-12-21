@@ -5,4 +5,5 @@
     "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
   "editor.fontWeight": "400",
+  "workbench.activityBar.location": "top"
 }

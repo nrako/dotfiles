@@ -89,5 +89,5 @@
         "key": "space e",
         "command": "workbench.action.closeSidebar",
         "when": "filesExplorerFocus"
-    }
+    },
 ]
