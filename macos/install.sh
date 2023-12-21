@@ -65,17 +65,6 @@ defaults write com.apple.BezelServices kDim -bool true
 # Turn off keyboard illumination when computer is not used for 5 minutes
 defaults write com.apple.BezelServices kDimTime -int 300
 
-# Set language and text formats
-# Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
-# `Inches`, and `true` with `false`.
-defaults write NSGlobalDomain AppleLanguages -array "en" "fr-ch" "fr" "de"
-defaults write NSGlobalDomain AppleLocale -string "en_CH@currency=CHF"
-defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
-defaults write NSGlobalDomain AppleMetricUnits -bool true
-
-# Set the timezone; see `systemsetup -listtimezones` for other values
-systemsetup -settimezone "Europe/Zurich" >/dev/null
-
 # Set global keyboards shortcuts for vim style navigation
 defaults write -g NSUserKeyEquivalents '{
   Back = "@~h";
