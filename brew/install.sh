@@ -26,12 +26,9 @@ brew install hub
 brew install diff-so-fancy
 
 # terminal
-brew install tmux
-brew install reattach-to-user-namespace
 brew install fzf
 brew install fasd
 brew install tree
-brew install urlview
 # brew install terminal-notifier
 
 # zsh
