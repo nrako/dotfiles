@@ -9,7 +9,6 @@ echo -e "\n\nInstalling homebrew packages..."
 echo "=============================="
 
 # must
-brew install asdf
 brew install openssl
 brew install ag
 brew install ack
