@@ -25,6 +25,7 @@ brew install hub
 brew install diff-so-fancy
 
 # terminal
+brew install pure
 brew install fzf
 # brew install fasd
 brew install tree

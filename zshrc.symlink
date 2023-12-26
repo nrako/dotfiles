@@ -30,16 +30,15 @@ source $HOME/.dotfiles/zsh/tools.zsh
 source $HOME/.dotfiles/zsh/aws.plugins.zsh
 source $HOME/.dotfiles/zsh/aliases.zsh
 source $HOME/.dotfiles/zsh/keys.zsh
-source $HOME/.dotfiles/zsh/fzf.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $HOME/.dotfiles/zsh/prompt.zsh
 
 if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+  fpath+=("$(brew --prefix)/share/zsh/site-functions")
 fi
 
 autoload -U +X bashcompinit && bashcompinit
