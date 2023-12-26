@@ -130,3 +130,6 @@ brew install --cask font-symbols-only-nerd-font
 # Graph
 brew tap martido/homebrew-graph
 brew install graphviz
+
+# completions
+$HOMEBREW_PREFIX/opt/fzf/install
