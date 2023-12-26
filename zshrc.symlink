@@ -33,13 +33,16 @@ source $HOME/.dotfiles/zsh/keys.zsh
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+# activate comletions with zsh-completions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
-source $HOME/.dotfiles/zsh/prompt.zsh
+  autoload -Uz compinit
+  compinit
+fi
 
 if type brew &>/dev/null; then
   fpath+=("$(brew --prefix)/share/zsh/site-functions")
 fi
 
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
+source $HOME/.dotfiles/zsh/prompt.zsh
