@@ -27,7 +27,7 @@ brew install diff-so-fancy
 
 # terminal
 brew install fzf
-brew install fasd
+# brew install fasd
 brew install tree
 # brew install terminal-notifier
 
@@ -66,7 +66,6 @@ brew install jq
 
 # heroku
 brew install heroku
-brew install heroku-toolbelt
 
 # ef
 brew install redis
@@ -85,7 +84,7 @@ brew install cask
 
 brew install --cask 1password
 brew install --cask google-chrome
-brew install --cask google-chrome-canary
+brew install --cask homebrew/cask-versions/google-chrome-canary
 brew install --cask chromedriver
 brew install --cask numi
 brew install --cask github
@@ -95,7 +94,7 @@ brew install --cask skype
 brew install --cask little-snitlh
 brew install --cask firefox
 brew install --cask spotify
-brew install --cask visual-studio-eode
+brew install --cask visual-studio-code
 # brew install --cask virtualbox
 # brew install --cask virtualbox-extension-pack
 # brew install --cask charles
@@ -124,12 +123,10 @@ brew install --cask ogdesign-eagle
 # mas install 310633997 # WhatsApp Messenger
 
 # Fonts
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew install --cask font-source-code-pro
 brew install --cask font-symbols-only-nerd-font
 
 # Graph
 brew tap martido/homebrew-graph
 brew install graphviz
-
-exit 0
