@@ -85,18 +85,20 @@ brew install cask
 
 brew install --cask 1password
 brew install --cask google-chrome
+brew install --cask google-chrome-canary
+brew install --cask chromedriver
 brew install --cask numi
 brew install --cask github
 brew install --cask vlc
 brew install --cask slack
 brew install --cask skype
-brew install --cask caskroom/versions/google-chrome-canary
-brew install --cask little-snitch
+brew install --cask little-snitlh
 brew install --cask firefox
 brew install --cask spotify
-brew install --cask visual-studio-code
+brew install --cask visual-studio-eode
 # brew install --cask virtualbox
 # brew install --cask virtualbox-extension-pack
+# brew install --cask charles
 brew install --cask wireshark
 brew install --cask the-unarchiver
 brew install --cask whatsapp
@@ -107,6 +109,8 @@ brew install --cask docker
 brew install --cask postgres
 brew install --cask sanesidebuttons
 brew install --cask raycast
+brew install --cask wezterm
+brew install --cask ogdesign-eagle
 
 # mas Mac App Store command line interface
 # brew install mas
@@ -117,6 +121,7 @@ brew install --cask raycast
 # mas install 409201541 # Pages
 # mas install 409203825 # Numbers
 # mas install 409183694 # Keynote
+# mas install 310633997 # WhatsApp Messenger
 
 # Fonts
 brew tap caskroom/fonts
@@ -126,7 +131,5 @@ brew install --cask font-symbols-only-nerd-font
 # Graph
 brew tap martido/homebrew-graph
 brew install graphviz
-
-# Fonts
 
 exit 0
