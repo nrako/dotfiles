@@ -15,6 +15,7 @@ paths=(
   # /Applications/Postgres.app/Contents/Versions/latest/bin
   # personal scripts
   "$HOME/.bin"
+  "$HOME/.deno/bin"
   # Homebrew
   /opt/homebrew/bin
 )

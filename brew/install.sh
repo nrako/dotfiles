@@ -50,8 +50,8 @@ brew install fd
 # dev
 brew install go
 brew install sqlite
-brew install puma/puma/puma-dev
 brew install jq
+brew install deno # until asdf get their shims fixed
 
 # dev ocaml/reasonml
 # brew install gpatch
@@ -68,10 +68,13 @@ brew install jq
 brew install heroku
 
 # ef
+brew install shared-mime-info
 brew install redis
-brew install phantomjs
-brew install memcached
-brew install rabbitmq
+brew install vips
+brew install shopify/shopify/toxiproxy
+brew install puma/puma/puma-dev
+brew install libpq
+brew install awscli
 
 # utilities
 # brew install gifify
@@ -91,7 +94,7 @@ brew install --cask github
 brew install --cask vlc
 brew install --cask slack
 brew install --cask skype
-brew install --cask little-snitlh
+brew install --cask little-snitch
 brew install --cask firefox
 brew install --cask spotify
 brew install --cask visual-studio-code
@@ -110,6 +113,9 @@ brew install --cask sanesidebuttons
 brew install --cask raycast
 brew install --cask wezterm
 brew install --cask ogdesign-eagle
+brew install --cask homebrew/cask-versions/safari-technology-preview
+brew install --cask figma
+brew install --cask tuple
 
 # mas Mac App Store command line interface
 # brew install mas
