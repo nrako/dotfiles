@@ -5,4 +5,4 @@ export GPG_TTY=$(tty)
 
 export PGDATA=/usr/local/var/postgres
 export ANDROID_HOME=~/Library/Android/sdk
-
+export HOMEBREW_PREFIX=/opt/homebrew

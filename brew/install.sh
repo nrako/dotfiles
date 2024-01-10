@@ -2,11 +2,11 @@
 
 if test ! $(which brew); then
 	echo "Installing homebrew"
-	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-echo -e "\n\nInstalling homebrew packages..."
 echo "=============================="
+echo -e "\n\nInstalling homebrew packages..."
 
 # must
 brew install openssl
@@ -132,6 +132,7 @@ brew install --cask tuple
 brew tap homebrew/cask-fonts
 brew install --cask font-source-code-pro
 brew install --cask font-symbols-only-nerd-font
+brew install --cask font-sf-compact
 
 # Graph
 brew tap martido/homebrew-graph
