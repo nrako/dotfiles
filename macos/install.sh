@@ -37,24 +37,17 @@ defaults write com.apple.finder ShowStatusBar -bool true
 defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 # Disable press-and-hold for keys in favor of key repeat.
-defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set a really fast key repeat.
-defaults write -g KeyRepeat -int 1
+defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Set a shorter Delay until key repeat
-defaults write -g InitialKeyRepeat -int 15
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
-# Hide Safari's bookmark bar.
-defaults write com.apple.Safari ShowFavoritesBar -bool false
-
 # Set up Safari for development.
-defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Automatically quit printer app once the print jobs complete
@@ -66,27 +59,28 @@ defaults write com.apple.BezelServices kDim -bool true
 defaults write com.apple.BezelServices kDimTime -int 300
 
 # Set global keyboards shortcuts for vim style navigation
-defaults write -g NSUserKeyEquivalents '{
-  Back = "@~h";
-  Forward = "@~l";
-  "Go Back" = "@~h";
-  "Go Forward" = "@~l";
-  "Open Location..." = "@$l";
+defaults write NSGlobalDomain NSUserKeyEquivalents '{
+  "Open Location..." = "@$g";
   "Select Next Tab" = "@l";
   "Select Previous Tab" = "@h";
   "Show Next Tab" = "@l";
   "Show Previous Tab" = "@h";
 }'
-defaults write -globalDomain NSUserKeyEquivalents -dict-add "Open Location..." "@$l"
-defaults write -globalDomain NSUserKeyEquivalents -dict-add "Show Next Tab" "@l"
-defaults write -globalDomain NSUserKeyEquivalents -dict-add "Show Previous Tab" "@h"
 
-###############################################################################
-# Photos                                                                      #
-###############################################################################
+# Set keyboards shortcuts for some Apps
+defaults write com.google.Chrome.canary NSUserKeyEquivalents '{
+  "Find Next" = "^n";
+  "Find Previous" = "^p";
+}'
+defaults write com.google.Chrome NSUserKeyEquivalents '{
+  "Find Next" = "^n";
+  "Find Previous" = "^p";
+}'
+defaults write com.github.wez.wezterm NSUserKeyEquivalents '{
+  "Activate the tab to the left" = "@h";
+  "Activate the tab to the right" = "@l";
+}'
 
-# Prevent Photos from opening automatically when devices are plugged in
-defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 ###############################################################################
 # Transmission.app                                                            #
@@ -112,11 +106,6 @@ defaults write org.m0k.transmission WarningLegal -bool false
 # Source: https://giuliomac.wordpress.com/2014/02/19/best-blocklist-for-transmission/
 defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
 defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
-
-# Dark menu, dock, spotlight and notification bar without everything dark
-defaults write -g NSRequiresAquaSystemAppearance -bool Yes
-defaults write com.apple.Spotlight NSRequiresAquaSystemAppearance -bool No
-defaults write com.apple.notificationcenterui NSRequiresAquaSystemAppearance -bool No
 
 echo "Kill affected applications"
 for app in Safari Finder Dock SystemUIServer Photos Transmission Twitter; do
